@@ -1,7 +1,6 @@
 *{
 margin:0px;
 padding: 0px;
-font-size: 25px;
 }
 
 #cabecalho{
@@ -9,6 +8,7 @@ font-size: 25px;
     height:90px;
     background-color: black;
     position:relative;
+    font-size: 25px;
 }
 
 #logo{
@@ -26,6 +26,7 @@ font-size: 25px;
     top:-100%;
     text-align: center;
     padding-top: 30px;
+    font-size: 21px;
 }
 
 .sublinhado{
