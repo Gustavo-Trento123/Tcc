@@ -1,70 +1,74 @@
 *{
-margin:0px;
-padding: 0px;
-}
+    margin:0px;
+    padding: 0px;
+    }
+    
+    #cabecalho{
+        width: 100%;
+        height:90px;
+        background-color: black;
+        position:relative;
+        font-size: 25px;
+    }
+    
+    #logo{
+        width: 90px;
+        height: 90px;
+        margin-left:30px;
+        position:absolute;
+    }
+    
+    #usuario{
+        width:500px;
+        height: 90px;
+        position: relative;
+        left: 68%;
+        top:-100%;
+        text-align: center;
+        padding-top: 20px;
+        font-size: 13px;
+    }
+    
+    
+    #usuario ul{
+        color:white;
+        list-style-type: none;
+        text-align: center;
+    }
+    
+    #usuario li{
+        display: inline;
+        margin:5%;
+    }
+    
+    #usuario-img{
+        width: 70px;
+        height: 70px;
+        position:absolute;
+        right: 2%;
+        top:12%;
+    }
+    
+    #navegacao{
+        width: 50%;
+        margin:0 auto;
+        padding: 2%;
+        font-size: 18px;
+    }
+    
+    #navegacao ul{
+        color:white;
+        list-style-type: none;
+        text-align: center;
+    }
+    
+    #navegacao li{
+        display: inline;
+        margin:10%;
+    }
 
-#cabecalho{
-    width: 100%;
-    height:90px;
-    background-color: black;
-    position:relative;
-    font-size: 25px;
-}
-
-#logo{
-    width: 90px;
-    height: 90px;
-    margin-left:30px;
-    position:absolute;
-}
-
-#usuario{
-    width:500px;
-    height: 90px;
-    position: relative;
-    left: 68%;
-    top:-100%;
-    text-align: center;
-    padding-top: 30px;
-    font-size: 21px;
-}
-
-.sublinhado{
-    text-decoration:underline yellow;
-}
-
-#usuario ul{
-    color:white;
-    list-style-type: none;
-    text-align: center;
-}
-
-#usuario li{
-    display: inline;
-    margin:5%;
-}
-
-#usuario-img{
-    width: 70px;
-    height: 70px;
-    position:absolute;
-    right: 2%;
-    top:12%;
-}
-
-#navegacao{
-    width: 50%;
-    margin:0 auto;
-    padding: 2%;
-}
-
-#navegacao ul{
-    color:white;
-    list-style-type: none;
-    text-align: center;
-}
-
-#navegacao li{
-    display: inline;
-    margin:10%;
-}
+    .jogos{
+        margin:50px 0px 20px 20px;
+        position: relative;
+        left:30px;
+    }
