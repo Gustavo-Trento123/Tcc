@@ -1,70 +1,64 @@
 *{
-margin:0px;
-padding: 0px;
-}
-
-#cabecalho{
-    width: 100%;
-    height:90px;
-    background-color: black;
-    position:relative;
-    font-size: 25px;
-}
-
-#logo{
-    width: 90px;
-    height: 90px;
-    margin-left:30px;
-    position:absolute;
-}
-
-#usuario{
-    width:500px;
-    height: 90px;
-    position: relative;
-    left: 68%;
-    top:-100%;
-    text-align: center;
-    padding-top: 30px;
-    font-size: 21px;
-}
-
-.sublinhado{
-    text-decoration:underline yellow;
-}
-
-#usuario ul{
-    color:white;
-    list-style-type: none;
-    text-align: center;
-}
-
-#usuario li{
-    display: inline;
-    margin:5%;
-}
-
-#usuario-img{
-    width: 70px;
-    height: 70px;
-    position:absolute;
-    right: 2%;
-    top:12%;
+    margin:0px;
+    padding:0px;
 }
 
 #navegacao{
-    width: 50%;
-    margin:0 auto;
-    padding: 2%;
+    border:1px solid red;
+    height:60px;
+    width:100%; /*1360px*/
 }
 
-#navegacao ul{
-    color:white;
-    list-style-type: none;
-    text-align: center;
+#conteudo{
+    border: 1px solid red;
+    width: 90%; /* 1224 px */
+    margin: 0 auto;
 }
 
-#navegacao li{
+#conteudo-carrosel{
+    border:1px solid rgb(119, 12, 241);
+    width:89.86%; /* 1100px */
+    height:393px;
+    margin: 5.12% auto 2.9%;
+}
+
+#catalogo{
+    border: 1px solid red;
+    height:780px;
+    margin-left: 2.6%;
+}
+
+#rodape{
+    border: 1px solid red;
+    width:100%;
+    height: 200px;
+    background-color: black;
+}
+
+
+
+
+
+/*  Navegação */
+.logo{
+    border: 1px solid red;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin: 0pc;
+    left: 10px;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.menu{
+     margin: 0 auto;
+     text-align: center;
+     height: 50%;
+}
+.menu li{
+    position: static;
     display: inline;
-    margin:10%;
 }
