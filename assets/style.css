@@ -64,11 +64,12 @@
 }
 
 /*Carrossel*/
-
 .carousel{
-    height:500px;
+    height: 100%!important;
+    width: 100%!important;
 }
 
 .carousel .carousel-item{
-    width: 400px;
+    width:50% !important; 
+    height: 100%!important;
 }
