@@ -3,6 +3,10 @@
     padding: 0px;
 }
 
+body{
+    background-color: lightcyan;
+}
+
 #navegacao {
     background-color: #252525;
     height: 60px;
@@ -89,6 +93,18 @@ a:hover{
     height: 100% !important;
 }
 
+.carousel .indicators{
+    background-color: black;
+    
+    width:max-content;
+    height: max-content;
+    border-radius: 15px;
+    margin: 0px auto !important;
+}
+
+.carousel .indicators .indicator-item{
+    margin: 0px 5px 0px 5px !important;
+}
 
 /* Catalogo */
 
