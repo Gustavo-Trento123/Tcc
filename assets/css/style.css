@@ -11,26 +11,25 @@
 }
 
 #conteudo {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     width: 90%; /* 1224 px */
     margin: 0 auto;
 }
 
 #conteudo-carrosel {
-    /* border: 1px solid rgb(119, 12, 241); */
+    border: 1px solid rgb(119, 12, 241);
     width: 89.86%; /* 1100px */
     height: 393px;
     margin: 5.12% auto 2.9%;
 }
 
 #catalogo {
-    /* border: 1px solid red; */
-    height: 780px;
-    margin-left: 2.6%;
+    border: 1px solid red;
+    /* margin-left: 2.6%; */
 }
 
 #rodape {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     width: 100%;
     height: 200px;
     background-color: #252525;
@@ -42,7 +41,7 @@
 
 /*  Navegação */
 .logo {
-   /*  border: 1px solid red; */
+    border: 1px solid red;
     border-radius: 50%;
     width: 45px;
     height: 45px;
