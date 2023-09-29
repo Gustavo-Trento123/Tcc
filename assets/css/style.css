@@ -62,6 +62,7 @@
 .menu li {
     position: static;
     display: inline;
+    color: whitesmoke;
 }
 
 /*Carrossel*/
