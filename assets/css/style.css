@@ -4,65 +4,78 @@
 }
 
 #navegacao {
-   border: 1px solid red; 
-   background-color: #252525;
+    background-color: #252525;
     height: 60px;
     width: 100%; /*1360px*/
 }
 
 #conteudo {
-    border: 1px solid red;
     width: 90%; /* 1224 px */
     margin: 0 auto;
 }
 
 #conteudo-carrosel {
-    border: 1px solid rgb(119, 12, 241);
     width: 89.86%; /* 1100px */
     height: 393px;
     margin: 5.12% auto 2.9%;
 }
 
 #catalogo {
-    border: 1px solid red;
     /* margin-left: 2.6%; */
 }
 
 #rodape {
-    border: 1px solid red;
     width: 100%;
     height: 200px;
     background-color: #252525;
+    color: whitesmoke;
+    font-size: 18px;
+    margin-top: 20px;
+    padding:50px 570px 50px 570px;
+    text-align: center;
 }
 
-
-
-
+#rodape p{
+    font-size:13px ;
+    margin-top: 15px;
+}
 
 /*  Navegação */
-.logo {
-    border: 1px solid red;
+#navegacao{
+    margin: 0%;
+}
+
+.logo{
     border-radius: 50%;
     width: 45px;
     height: 45px;
-    margin: 0px;
-    left: 10px;
-    position: relative;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    margin: 7.5px 0px 7.5px 50px;
+    position: absolute;
+    
 }
 
-.menu {
-    margin: 0 auto;
+.menu{
+    list-style-type: none;
     text-align: center;
-    height: 50%;
+    align-content: center;
+    align-items: center;
+    align-self: start;
+    color: whitesmoke;
+    text-transform: uppercase;
+    }
+
+.menu li{
+    display: inline;
+    margin: 0px 150px;
+    line-height: 60px;
 }
 
-.menu li {
-    position: static;
-    display: inline;
-    color: whitesmoke;
+a{
+    color: whitesmoke !important;
+}
+
+a:hover{
+    color:#FA531B !important;
 }
 
 /*Carrossel*/
@@ -85,6 +98,6 @@
     display: block;
 }
 
-.carrosel-filmes {
+.carrosel-filmes{
     margin-top: 5px;
 }
