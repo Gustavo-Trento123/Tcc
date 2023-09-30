@@ -1,152 +1,159 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Catalogo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!--Links do catalogo-->
-    <link rel="stylesheet" href="assets/style-catalogo.css">
-    <link rel="stylesheet" href="assets/responsive.css">
-    <link rel="stylesheet" href="assets/owl/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/owl/owl.theme.default.min.css">
-    <!--Fim links do catalogo-->
+    <!-- Jogos -->
+    <link rel="stylesheet" href="./assets/css/Owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/Owl/owl.theme.default.min.css">
 
-    <title>Protótipo 0.2</title>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>The Real Score</title>
+
 </head>
+
 <body>
-
-    <!-- Início da Navegação --> 
-    <div id="cabecalho">
-        <img id="logo" src="assets/img/logo.png">
-        <div id="navegacao">
-            <ul>
-                <li>
-                    Jogos
-                </li>
-                <li>
-                    Críticos
-                </li>
-                <li>
-                    Notícias
-                </li>
+    <div id="navegacao">
+        <a href="index.html"><img src="./assets/img/logo.png" class="logo"></a>
+        <center>
+            <ul class="menu">
+                <li><a href="#">Jogos</a></li>
+                <li><a href="#">Críticos</a></li>
+                <li><a href="#">Notícias</a></li>
             </ul>
-        </div>
-        
-        <div id="usuario">
-            <ul id="conta">
-                <li>
-                    Entrar
-                </li>
-
-                <li>
-                    Cadastrar-se
-                </li>
-            </ul>
-
-            <img id="usuario-img" src="assets/img/usuario.png">
-
-            <!--Fim da Navegação-->
-        </div>
-
-        <!--Inicio do Conteudo Principal-->
-        <div id="conteudo">
-            <center>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" style="width:700px">
-                  <div class="carousel-item active" >
-                    <img class="d-block w-100" src="assets/img/carrosel1.jpg" alt="Primeiro Slide">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Lorem ipsum dolor sit amet.</h5>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A repellat voluptate maiores.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/img/carrosel2.jpg" alt="Segundo Slide">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Lorem ipsum dolor sit amet.</h5>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A repellat voluptate maiores.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/img/carrosel3.jpg" alt="Terceiro Slide">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Lorem ipsum dolor sit amet.</h5>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A repellat voluptate maiores.</p>
-                    </div>
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
-                  <span class="sr-only">Anterior</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" >
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Próximo</span>
-                </a>
-              </div>
-            </center>
-        </div>
-
-        <!--Fim do Conteudo Principal-->
-
-        <!-- Começo do catalogo-->
-
-        <h2>Em alta</h2>
-        <div class="jogos">
-          <div class="owl-carousel owl-theme">
-              <div class="item">
-                  <img class="imgcarousel" src="assets/img/batman.jpg" alt="imagebatman">
-              </div>
-              <div class="item">
-                  <img class="imgcarousel" src="assets/img/lacasadepapel.jpg" alt="imagelacasadepapel">
-              </div>
-              <div class="item">
-                  <img class="imgcarousel" src="assets/img/loki.jpg" alt="imageloki">
-              </div>
-              <div class="item">
-                  <img class="imgcarousel" src="assets/img/theumbrellaacademy.jpg" alt="imagetheumbrellaacademy">
-              </div>
-              <div class="item">
-                  <img class="imgcarousel" src="assets/img/youngroyals.jpg" alt="imageyoungroyals">
-              </div>
-              <div class="item">
-                  <img class="imgcarousel" src="assets/img/venom.jpg" alt="imagevenom">
-              </div>
-              <div class="item">
-                  <img class="imgcarousel" src="assets/img/peakyblinders.jpg" alt="imagepeakyblinders">
-              </div>
-              <div class="item">
-                  <img class="imgcarousel" src="assets/img/lucifer.jpg" alt="imagelucifer">
-              </div>
-              <div class="item">
-                  <img class="imgcarousel" src="assets/img/spiderman.jpg" alt="imagespiderman">
-              </div>
-              <div class="item">
-                  <img class="imgcarousel" src="assets/img/vikings.jpg" alt="imagevikings">
-              </div>
-              <div class="item">
-                  <img class="imgcarousel" src="assets/img/annewithane.jpg" alt="imageannewithane">
-              </div>
-      </div>
-        <!-- Fim do catalogo-->
-
+        </center>
     </div>
 
-    <!-- JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="assets/js/owl/jquery.min.js"></script>
-    <script src="assets/js/owl/owl.carousel.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <!--Fim do JS-->
+    <!-- Carossel princioal -->
+    <div id="conteudo">
+        <div id="conteudo-carrosel" >
+            <div class="carousel">
+                <a href="#one" class="carousel-item">
+                    <img src="assets/img/carrosel1.jpg" width="1100px">
+                </a>
+
+                <a href="#two" class="carousel-item">
+                    <img src="assets/img/carrosel2.jpg">
+                </a>
+
+                <a href="#three" class="carousel-item">
+                    <img src="assets/img/carrosel3.jpg">
+                </a>
+
+                <a href="#four" class="carousel-item">
+                    <img src="assets/img/carrosel4.jpg">
+                </a>
+                <center><div class="black-box"></div></center>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.carousel').carousel({
+                    duration: 200,
+                    indicators: true,
+                });
+            });
+            
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </div>
+
+    <!--  Catalogo Jogos -->
+    <div id="catalogo">
+        <div class="carrosel-filmes">
+            <h5>Em alta:</h5>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-filme" src="./assets/img/Catalogo/jogo1.jpg" alt="catalogo">
+                    <div class="teste"></div>
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./assets/img/Catalogo/jogo2.jpg" alt="catalogo">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./assets/img/Catalogo/jogo3.jpg" alt="catalogo">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./assets/img/Catalogo/jogo4.jpg" alt="catalogo">
+                </div>
+            </div>
+        </div>
+        <div class="carrosel-filmes">
+            <h5>Recomendados:</h5>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-filme" src="./assets/img/Catalogo/jogo1.jpg" alt="catalogo">
+                    <div class="teste"></div>
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./assets/img/Catalogo/jogo2.jpg" alt="catalogo">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./assets/img/Catalogo/jogo3.jpg" alt="catalogo">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./assets/img/Catalogo/jogo4.jpg" alt="catalogo">
+                </div>
+            </div>
+        </div>
+        <div class="carrosel-filmes">
+            <h5>Ação:</h5>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-filme" src="./assets/img/Catalogo/jogo1.jpg" alt="catalogo">
+                    <div class="teste"></div>
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./assets/img/Catalogo/jogo2.jpg" alt="catalogo">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./assets/img/Catalogo/jogo3.jpg" alt="catalogo">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./assets/img/Catalogo/jogo4.jpg" alt="catalogo">
+                </div>
+            </div>
+        </div>
+        <div class="carrosel-filmes">
+            <h5>Sobrevivencia:</h5>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-filme" src="./assets/img/Catalogo/jogo1.jpg" alt="catalogo">
+                    <div class="teste"></div>
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./assets/img/Catalogo/jogo2.jpg" alt="catalogo">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./assets/img/Catalogo/jogo3.jpg" alt="catalogo">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./assets/img/Catalogo/jogo4.jpg" alt="catalogo">
+                </div>
+            </div>
+        </div>
+        <script src="./assets/script/Owl/owl.carousel.min.js"></script>
+        <script src="./assets/script/Owl/main.js"></script>
+    </div>
+
+    <div id="rodape">
+
+        
+        <ul>
+            <li>Trabalhe conosco</li>
+            <li>Termos de uso</li>
+            <li>Contato </li>
+            <li>Sobre nós</li>
+        </ul>
+        
+        <p>The Real Score 2023 Todos os direitos reservados.</p>
+    </div>
 
 </body>
 </html>

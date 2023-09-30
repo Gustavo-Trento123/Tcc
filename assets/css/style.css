@@ -1,0 +1,119 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: lightcyan;
+}
+
+#navegacao {
+    background-color: #252525;
+    height: 60px;
+    width: 100%; /*1360px*/
+}
+
+#conteudo {
+    width: 90%; /* 1224 px */
+    margin: 0 auto;
+}
+
+#conteudo-carrosel {
+    width: 89.86%; /* 1100px */
+    height: 393px;
+    margin: 5.12% auto 2.9%;
+}
+
+#catalogo {
+    /* margin-left: 2.6%; */
+}
+
+#rodape {
+    width: 100%;
+    height: 200px;
+    background-color: #252525;
+    color: whitesmoke;
+    font-size: 18px;
+    margin-top: 20px;
+    padding:50px 570px 50px 570px;
+    text-align: center;
+}
+
+#rodape p{
+    font-size:13px ;
+    margin-top: 15px;
+}
+
+/*  Navegação */
+#navegacao{
+    margin: 0%;
+}
+
+.logo{
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin: 7.5px 0px 7.5px 50px;
+    position: absolute;
+    
+}
+
+.menu{
+    list-style-type: none;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    align-self: start;
+    color: whitesmoke;
+    text-transform: uppercase;
+    }
+
+.menu li{
+    display: inline;
+    margin: 0px 150px;
+    line-height: 60px;
+}
+
+a{
+    color: whitesmoke !important;
+}
+
+a:hover{
+    color:#FA531B !important;
+}
+
+/*Carrossel*/
+.carousel {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.carousel .carousel-item {
+    width: 50% !important;
+    height: 100% !important;
+}
+
+.carousel .indicators{
+    background-color: black;
+    
+    width:max-content;
+    height: max-content;
+    border-radius: 15px;
+    margin: 0px auto !important;
+}
+
+.carousel .indicators .indicator-item{
+    margin: 0px 5px 0px 5px !important;
+}
+
+/* Catalogo */
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}
