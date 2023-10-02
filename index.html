@@ -5,61 +5,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- Catalogo -->
+    
+    <!-- Carosel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Jogos -->
+    <!-- Catalogo de Jogos -->
     <link rel="stylesheet" href="./assets/css/Owl/owl.carousel.min.css">
-    <link rel="stylesheet" href="./assets/css/Owl/owl.theme.default.min.css">
+            <!-- Opcional theme.defaul nao sei oq faz-->
+            <link rel="stylesheet" href="./assets/css/Owl/owl.theme.default.min.css">
 
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>The Real Score</title>
-
 </head>
 
 <body>
     <div id="navegacao">
         <a href="index.html"><img src="./assets/img/logo.png" class="logo"></a>
-        <center>
             <ul class="menu">
-                <li><a href="#">Jogos</a></li>
+                <li><a href="#teste">Jogos</a></li>
                 <li><a href="#">Críticos</a></li>
                 <li><a href="#">Notícias</a></li>
             </ul>
-        </center>
     </div>
 
     <!-- Carossel princioal -->
     <div id="conteudo">
-        <div id="conteudo-carrosel" >
+        <div id="conteudo-carrosel">
             <div class="carousel">
-                <a href="#one" class="carousel-item">
+                <div href="#one" class="carousel-item">
                     <img src="assets/img/carrosel1.jpg" width="1100px">
-                </a>
-
-                <a href="#two" class="carousel-item">
+                </div>
+                <div href="#two" class="carousel-item">
                     <img src="assets/img/carrosel2.jpg">
-                </a>
-
-                <a href="#three" class="carousel-item">
+                </div>
+                <div href="#three" class="carousel-item">
                     <img src="assets/img/carrosel3.jpg">
-                </a>
-
-                <a href="#four" class="carousel-item">
+                </div>
+                <div href="#four" class="carousel-item">
                     <img src="assets/img/carrosel4.jpg">
-                </a>
-                <center><div class="black-box"></div></center>
+                </div>
             </div>
         </div>
         <script type="text/javascript">
             $(document).ready(function () {
-                $('.carousel').carousel({
-                    duration: 200,
+                var carousel = $('.carousel');
+
+                carousel.carousel({
+                    duration: 300,
                     indicators: true,
+                    dist: -40,
+                });
+                var intervalo = 5000;
+               
+                var autoplayInterval = setInterval(autoplay, intervalo);
+                function autoplay() {
+                    carousel.carousel('next');
+                }
+
+                // Bug ao segurar o carosel
+                carousel.on('mousedown', function () {
+                    clearInterval(autoplayInterval);
+                });
+        
+                carousel.on('mouseup', function () {
+                    autoplayInterval = setInterval(autoplay, intervalo);
                 });
             });
-            
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js" integrity="sha512-NiWqa2rceHnN3Z5j6mSAvbwwg3tiwVNxiAQaaSMSXnRRDh5C2mk/+sKQRw8qjV1vN4nf8iK2a0b048PnHbyx+Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </div>
@@ -82,9 +94,7 @@
                 <div class="item">
                     <img class="box-filme" src="./assets/img/Catalogo/jogo4.jpg" alt="catalogo">
                 </div>
-            </div>
-        </div>
-        <div class="carrosel-filmes">
+            </div><br>
             <h5>Recomendados:</h5>
             <div class="owl-carousel owl-theme">
                 <div class="item">
@@ -100,9 +110,7 @@
                 <div class="item">
                     <img class="box-filme" src="./assets/img/Catalogo/jogo4.jpg" alt="catalogo">
                 </div>
-            </div>
-        </div>
-        <div class="carrosel-filmes">
+            </div><br>
             <h5>Ação:</h5>
             <div class="owl-carousel owl-theme">
                 <div class="item">
@@ -118,9 +126,7 @@
                 <div class="item">
                     <img class="box-filme" src="./assets/img/Catalogo/jogo4.jpg" alt="catalogo">
                 </div>
-            </div>
-        </div>
-        <div class="carrosel-filmes">
+            </div><br>
             <h5>Sobrevivencia:</h5>
             <div class="owl-carousel owl-theme">
                 <div class="item">
@@ -144,16 +150,17 @@
 
     <div id="rodape">
 
-        
+
         <ul>
-            <li>Trabalhe conosco</li>
+            <li id="teste">Trabalhe conosco</li>
             <li>Termos de uso</li>
             <li>Contato </li>
             <li>Sobre nós</li>
         </ul>
-        
+
         <p>The Real Score 2023 Todos os direitos reservados.</p>
     </div>
 
 </body>
+
 </html>
