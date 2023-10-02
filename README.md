@@ -1,6 +1,7 @@
 # TTC Informática para Internet - ETEC Trajano Camargo 2023
 ## Projeto de pesquisa sobre os critérios de avaliação e sua credibiliadade no ranqueamento de jogos, visando avaliações mais fiéis, a real experiência do jogador e sua jogabilidade. ##
 
+## 👨‍💻 Contribuidores
 <table align="center">
   <th>Criadores</th>
   <th>GitHub</th>
