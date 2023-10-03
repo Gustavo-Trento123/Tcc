@@ -4,8 +4,119 @@
 }
 
 body {
-    background-color: lightcyan;
+    background-color: black;
 }
+
+[data-theme=fluent-dark] {
+    --globalColorBrand10: #061724;
+    --globalColorBrand20: #082338;
+    --globalColorBrand40: #0c3b5e;
+    --globalColorBrand70: #115ea3;
+    --globalColorBrand90: #2886de;
+    --globalColorBrand100: #479ef5;
+    --globalColorBrand110: #62abf5;
+    --globalColorBrand140: #b4d6fa;
+    --globalColorGrey4: #0a0a0a;
+    --globalColorGrey8: #141414;
+    --globalColorGrey12: #1f1f1f;
+    --globalColorGrey14: #242424;
+    --globalColorGrey16: #292929;
+    --globalColorGrey24: #3d3d3d;
+    --globalColorGrey32: #525252;
+    --globalColorGrey36: #5c5c5c;
+    --globalColorGrey40: #666666;
+    --globalColorGrey42: #6b6b6b;
+    --globalColorGrey46: #757575;
+    --globalColorGrey60: #999999;
+    --globalColorGrey68: #adadad;
+    --globalColorGrey84: #d6d6d6;
+    --globalColorWhiteAlpha10: #ffffff1a;
+    --globalColorWhite: #ffffff;
+    --globalColorBlack: #000000;
+    --colorBrandForeground1: var(--globalColorBrand100);
+    --colorBrandForegroundLink: var(--globalColorBrand100);
+    --colorBrandForegroundLinkHover: var(--globalColorBrand110);
+    --colorBrandForegroundLinkPressed: var(--globalColorBrand90);
+    --colorBrandForegroundLinkSelected: var(--globalColorBrand100);
+    --colorCompoundBrandForeground1: var(--globalColorBrand100);
+    --colorCompoundBrandForeground1Hover: var(--globalColorBrand110);
+    --colorCompoundBrandForeground1Pressed: var(--globalColorBrand90);
+    --colorNeutralForegroundInverted: var(--globalColorGrey14);
+    --colorNeutralForegroundInvertedLink: var(--globalColorWhite);
+    --colorNeutralForeground1: var(--globalColorWhite);
+    --colorNeutralForeground2: var(--globalColorGrey84);
+    --colorNeutralForegroundDisabled: var(--globalColorGrey36);
+    --colorNeutralForeground2BrandPressed: var(--globalColorBrand90);
+    --colorNeutralForeground2Hover: var(--globalColorWhite);
+    --colorNeutralForeground2Pressed: var(--globalColorWhite);
+    --colorNeutralForeground3: var(--globalColorGrey68);
+    --colorNeutralForeground3Hover: var(--globalColorGrey84);
+    --colorNeutralForeground4: var(--globalColorGrey60);
+    --colorNeutralForegroundOnBrand: var(--globalColorWhite);
+    --colorBrandBackground: var(--globalColorBrand70);
+    --colorNeutralBackgroundStatic: var(--globalColorGrey24);
+    --colorNeutralBackground1Pressed: var(--globalColorGrey12);
+    --colorNeutralBackground3Hover: var(--globalColorGrey16);
+    --colorNeutralBackground3Pressed: var(--globalColorGrey4);
+    --colorNeutralBackground1: var(--globalColorGrey16);
+    --colorNeutralBackground2: var(--globalColorGrey12);
+    --colorNeutralBackground3: var(--globalColorGrey8);
+    --colorNeutralBackground4: var(--globalColorGrey4);
+    --colorNeutralBackground5: var(--globalColorBlack);
+    --colorNeutralBackground5Hover: var(--globalColorGrey8);
+    --colorNeutralBackground5Pressed: var(--globalColorGrey2);
+    --colorTransparentBackground: transparent;
+    --colorNeutralBackground1Hover: var(--globalColorGrey24);
+    --colorNeutralBackgroundDisabled: var(--globalColorGrey8);
+    --colorNeutralBackground6: #00000033;
+    --colorNeutralBackground7: #0000004d;
+    --colorNeutralBackground8: #00000066;
+    --colorNeutralBackgroundAlpha3Hover: #ffffff0f;
+    --colorNeutralDarkBackgroundAlpha3Pressed: var(--globalColorWhiteAlpha10);
+    --fontSizeBase100: 10px;
+    --fontSizeBase200: 12px;
+    --fontSizeBase300: 14px;
+    --fontSizeBase400: 16px;
+    --fontWeightSemibold: 600;
+    --borderRadiusSmall: 2px;
+    --borderRadiusMedium: 4px;
+    --borderRadiusLarge: 6px;
+    --borderRadiusXLarge: 8px;
+    --borderRadiusCircular: 10000px;
+    --lineHeightBase300: 20px;
+    --colorTransparentStroke: transparent;
+    --colorNeutralStroke1: var(--globalColorGrey40);
+    --colorNeutralStroke1Hover: var(--globalColorGrey46);
+    --colorNeutralStroke1Pressed: var(--globalColorGrey42);
+    --colorBrandBackground2: var(--globalColorBrand20);
+    --colorNeutralStroke3: var(--globalColorGrey24);
+    --colorBrandBackground2Hover: var(--globalColorBrand40);
+    --colorBrandBackground2Pressed: var(--globalColorBrand10);
+    --colorBrandBackgroundInvertedPressed: var(--globalColorBrand140);
+    --colorNeutralStroke2: var(--globalColorGrey32);
+    --colorNeutralStrokeAccessibleSelected: var(--globalColorBrand100);
+    --colorCompoundBrandStroke: var(--globalColorBrand100);
+    --colorCompoundBrandStrokeHover: var(--globalColorBrand110);
+    --colorCompoundBrandStrokePressed: var(--globalColorBrand90);
+    --colorStrokeFocus2: var(--globalColorWhite);
+    --colorStrokeFocus3: #ffffff0d;
+    --shadow4: 0 0 2px rgba(0, 0, 0, 0.12),0 2px 4px rgba(0, 0, 0, 0.14);
+    --shadow28: 0 0 2px rgba(0, 0, 0, 0.12),0 4px 8px rgba(0, 0, 0, 0.14);
+    --shadowElevation2: 0px 1px 2px rgba(0, 0, 0, 0.14),0px 0px 2px rgba(0, 0, 0, 0.12);
+    --shadowElevation4: 0px 2px 4px rgba(0, 0, 0, 0.14),0px 0px 2px rgba(0, 0, 0, 0.12);
+    --fontFamilyBase: "Segoe UI","Segoe UI Web (West European)",-apple-system,BlinkMacSystem--font,Roboto,"Helvetica Neue",sans-serif;
+    --durationFaster: 100ms;
+    --durationFast: 150ms;
+    --durationNormal: 200ms;
+    --durationSlow: 300ms;
+    --durationSlower: 400ms;
+    --curveDecelerateMax: cubic-bezier(0, 0, 0, 1);
+    --curveEasyEaseMax: cubic-bezier(0.8, 0, 0.1, 1);
+    --curveDecelerateMid: cubic-bezier(0.1, 0.9, 0.2, 1);
+    --curveDecelerateMin: cubic-bezier(0.33, 0, 0.1, 1);
+}
+
+
 
 /*****  Navegação *****/
 #navegacao {
@@ -20,10 +131,9 @@ body {
 }
 
 .logo {
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    margin: 7.5px 0px 7.5px 50px;
+    width: 70px;
+    height: 70px;
+    
     position: absolute;
 
 }
