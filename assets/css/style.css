@@ -4,11 +4,13 @@
 }
 
 body{
-    background-color: lightcyan;
+    background: rgb(41,45,116);
+    background: radial-gradient(circle, rgba(41,45,116,1) 0%, rgba(13,18,112,1) 40%, rgba(0,2,40,1) 100%);
+    color:#eb2934;
 }
 
 #navegacao {
-    background-color: #252525;
+    background:linear-gradient(#b0152e 35%, #000228) ;
     height: 60px;
     width: 100%; /*1360px*/
 }
@@ -22,6 +24,7 @@ body{
     width: 89.86%; /* 1100px */
     height: 393px;
     margin: 5.12% auto 2.9%;
+    background-color:;
 }
 
 #catalogo {
@@ -31,7 +34,7 @@ body{
 #rodape {
     width: 100%;
     height: 200px;
-    background-color: #252525;
+    /* background-color: #252525; */
     color: whitesmoke;
     font-size: 18px;
     margin-top: 20px;
@@ -50,12 +53,9 @@ body{
 }
 
 .logo{
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    margin: 7.5px 0px 7.5px 50px;
+    height: 60px;
     position: absolute;
-    
+    margin-left: 2%;   
 }
 
 .menu{
@@ -75,7 +75,7 @@ body{
 }
 
 a{
-    color: whitesmoke !important;
+    color: #ffb847 !important;
 }
 
 a:hover{
@@ -109,8 +109,8 @@ a:hover{
 /* Catalogo */
 
 .box-filme {
-    height: 100%;
-    width: 100%;
+    height: 85% !important;
+    width: 85% !important; 
     display: block;
 }
 
