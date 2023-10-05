@@ -66,6 +66,7 @@ body{
     align-self: start;
     color: whitesmoke;
     text-transform: uppercase;
+    
     }
 
 .menu li{
@@ -80,6 +81,27 @@ a{
 
 a:hover{
     color:whitesmoke !important;
+}
+
+#usuario{
+    line-height: 60px;
+    height: 60px;
+    width:10%;
+    position:relative;
+    left:87%;
+    top:-100%;
+}
+
+#usuario img{
+    height: 75%;
+    margin-top:7px;
+    width:25%;
+}
+
+#usuario p{
+    position:relative;
+    top:-125%;
+    left: 50%;
 }
 
 /*Carrossel*/
