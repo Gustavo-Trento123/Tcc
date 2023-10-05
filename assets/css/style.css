@@ -38,13 +38,13 @@ body{
 }
 
 #rodape {
-    width: auto;
+    width: 100%;
     height: 200px;
     background-color: #000;
     color: whitesmoke;
     font-size: 18px;
     margin-top: 20px;
-   
+    padding:50px 570px 50px 570px;
     text-align: center;
 }
 
@@ -117,41 +117,6 @@ a:hover{
     top:-125%;
     left: 50%;
 }
-
-.modal{
-    color:#fff;
-    background-color: #000 !important;
-    max-height: 90% !important;
-}
-
-
-.logo-modal{
-    width:70px !important;
-    height:70px !important;
-}
-
-#titulo{
-    margin: 0 auto;
-}
-
-#logins img{
-    width:30%;
-    height: 25%;
-}
-
-.boxes{
-    background:#fff !important;
-    width:50% !important;
-}
-
-.submit{
-    background-color: #fff;
-    border: 0px solid black;
-    border-radius: 2px;
-    height: 50px;
-    width: 60px;
-}
-
 
 /*Carrossel*/
 /* Conteúdo */
