@@ -14,13 +14,19 @@
 
     <!-- jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
     <title>The Real Score</title>
 
 </head>
 
 <body>
     <div id="navegacao">
-        <a href="index.html"><img src="./assets/img/logo.png" class="logo"></a>
+        <a href="index.html"><img src="./assets/img/logo2.png" class="logo"></a>
         <center>
             <ul class="menu">
                 <li><a href="#">Jogos</a></li>
@@ -28,6 +34,39 @@
                 <li><a href="#">Notícias</a></li>
             </ul>
         </center>
+
+        <div id="usuario">
+                <img src="assets/img/usuario.png">
+
+            <!-- Modal Trigger -->
+            <p><a class="waves-effect waves-light btn modal-trigger" href="#modal1">CONTA</a></p>
+
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal">
+                <center>
+                <div class="modal-content">
+                    <div id="titulo">    
+                        <img class="logo-modal" src="assets/img/logo.png"><h4>The Real Score</h4>
+                    </div>
+                </div>
+                
+                <div id="logins">
+                    
+                    <img src="assets/img/logins.png">
+                
+                    <br>OU<br>
+                    
+                    <input class="boxes" type="text" value="E-MAIL OU TELEFONE"   name="usuario">
+                    <input class="boxes" type="text" value="SENHA" name="senha"><br>
+                    <input class="submit" type="submit" Value="ENVIAR">
+                </div>
+
+                <!-- <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                </div> -->
+            </div>
+            </center>
+        </div>
     </div>
 
     <!-- Carossel princioal -->
@@ -140,6 +179,19 @@
         </div>
         <script src="./assets/script/Owl/owl.carousel.min.js"></script>
         <script src="./assets/script/Owl/main.js"></script>
+
+        <!-- Modal Script -->
+        <script>('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems, options);
+          });
+        
+          // Or with jQuery
+        
+          $(document).ready(function(){
+            $('.modal').modal();
+          });
+        </script>
     </div>
 
     <div id="rodape">
