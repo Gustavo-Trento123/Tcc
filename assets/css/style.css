@@ -35,14 +35,6 @@ a:hover{
     padding: 0 2%; /* Aumentar o espaço nas margens para centralizar o conteúdo */
 }
 
-@media (max-width: 800px) {
-    #navegacao {
-      flex-wrap: wrap;
-      justify-content: center;
-      justify-content: space-around;
-    }
-}
-
 .logo {
     display: flex;
     height: 55px;
@@ -124,6 +116,14 @@ a:hover{
     height: 50px;
     width: 65px;
     padding: 0px 5px !important;
+}
+
+.sidenav-trigger{
+    display: none;
+}
+.sidenav{
+    background-color:#252525 !important;
+    color: white !important;
 }
 
 /* Carrossel */

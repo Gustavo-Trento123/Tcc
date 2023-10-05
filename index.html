@@ -15,26 +15,43 @@
     <link rel="stylesheet" href="./assets/css/Owl/owl.theme.default.min.css">
 
     <!-- jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"> 
+	</script> 
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- icones materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>The Real Score</title>
 
     
 </head>
 
 <body>
-    <div id="navegacao">
-        <a href="index.html"><img src="./assets/img/logo2.png" class="logo"></a>
-        <ul class="menu">
+    <div id="navegacao" class="nav-extended nav-wrapper">
+        <a href="index.html"><img src="./assets/img/logo2.png" class="logo brand-logo"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-medium-and-down"><i class="material-icons ">menu</i></a>
+        <ul id="nav-mobile" class="menu right hide-on-med-and-down">
             <li><a href="#">Jogos</a></li>
             <li><a href="#">Críticos</a></li>
             <li><a href="#">Notícias</a></li>
         </ul>
-        <div id="usuario">
+        <div class="sidenav" id="mobile-demo">
+            <ul>
+                <li><a href="#">Jogos</a></li>
+                <li><a href="#">Críticos</a></li>
+                <li><a href="#">Notícias</a></li>
+            </ul>
+            <br><br>
+            <div id="usuario">
+                <img src="assets/img/usuario.png">
+                <p><a class="waves-effect waves-light btn modal-trigger" href="#modal1">CONTA</a></p>
+            </div>
+        </div>
+        <div id="usuario" class="right hide-on-med-and-down">
             <img src="assets/img/usuario.png">
             <p><a class="waves-effect waves-light btn modal-trigger" href="#modal1">CONTA</a></p>
             <div id="modal1" class="modal">
@@ -97,7 +114,15 @@
                 });   
             });
         </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src= 
+        "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"> 
+            </script> 
+        <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+            });
+
+        </script>
     </div>
 
     <!-- Catálogo de Jogos -->
@@ -171,13 +196,7 @@
         <script src="./assets/script/Owl/main.js"></script>
 
         <!-- Modal Script -->
-        <script>('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.modal');
-            var instances = M.Modal.init(elems, options);
-          });
-        
-          // Or with jQuery
-        
+        <script>   
           $(document).ready(function(){
             $('.modal').modal();
           });
