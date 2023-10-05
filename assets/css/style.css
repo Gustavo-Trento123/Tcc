@@ -22,16 +22,6 @@ body{
     margin: 0 auto;
 }
 
-#conteudo-carrosel {
-    width: 89.86%; /* 1100px */
-    height: 393px;
-    margin: 5.12% auto 2.9%;
-}
-
-#catalogo {
-    /* margin-left: 2.6%; */
-}
-
 #rodape {
     width: auto;
     height: 200px;
