@@ -55,20 +55,30 @@ a:hover {
 /***** Conteudo *****/
 #conteudo {
     width: 90% /* 1224 px */;
-    margin: 0 auto;
+    margin: 0 auto;    
 }
 
+
 /***** Carrossel *****/
-#conteudo-carrosel {
-    width: 89.86%;/* 1100px */
-    height: 393px;
-    margin: 5.12% auto 2.9%;
+
+.carousel .indicators{
+    background-color: black;
+    
+    width:max-content;
+    height: max-content;
+    border-radius: 15px;
+    margin: 0px auto !important;
 }
+
+.carousel .indicators .indicator-item{
+    margin: 0px 5px 0px 5px !important;
+}
+
 
 .carousel {
     height: 800px;
-    perspective: 950px;
-    transform: translateY(-100px);
+    perspective: 950px !important;
+    transform: translateY(0px) !important;
 }
 
 .carousel .carousel-item {
@@ -81,18 +91,6 @@ a:hover {
     height: auto;
 }
 
-.carousel .indicators {
-    bottom: 42px !important;
-    background-color: black;
-    width: fit-content;
-    height: max-content;
-    border-radius: 15px;
-    margin: 0px auto !important;
-}
-
-.carousel .indicators .indicator-item {
-    margin: 0px 6px 2px 6px !important;
-}
 
 /***** Catalogo *****/
 
@@ -114,7 +112,6 @@ a:hover {
     color: whitesmoke;
     font-size: 18px;
     margin-top: 20px;
-    padding: 50px 570px 50px 570px;
     text-align: center;
 }
 
