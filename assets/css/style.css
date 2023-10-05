@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 'Averia Serif Libre', cursive;
 }
 
 body{
@@ -9,6 +10,7 @@ body{
     font-family: 'Averia Serif Libre', cursive;
 }
 
+/* Navegação */
 #navegacao {
     background:#000 ;
     height: 60px;
@@ -73,10 +75,37 @@ body{
     display: inline;
     margin: 0px 150px;
     line-height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #252525;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
 }
 
-a{
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+a {
     color: whitesmoke !important;
+    text-decoration: none;
 }
 
 a:hover{
@@ -140,37 +169,63 @@ a:hover{
 
 
 /*Carrossel*/
+a:hover {
+    color: #FA531B !important;
+}
+
+/* Conteúdo */
+#conteudo {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Carrossel */
 .carousel {
-    height: 100% !important;
-    width: 100% !important;
+    max-width: 100% !important;
 }
 
-.carousel .carousel-item {
-    width: 50% !important;
-    height: 100% !important;
+.carousel img {
+    max-width: 100% !important;
+    height: auto !important;
 }
 
-.carousel .indicators{
-    background-color: black;
-    
-    width:max-content;
-    height: max-content;
-    border-radius: 15px;
-    margin: 0px auto !important;
+.carousel .carousel-item{
+    width: 650px !important;
+    height: 350px !important;
 }
 
-.carousel .indicators .indicator-item{
-    margin: 0px 5px 0px 5px !important;
+/* Catálogo de Jogos */
+.carrosel-filmes h5 {
+    margin-top: 20px;
 }
 
-/* Catalogo */
+.owl-carousel .item {
+    margin-right: 10px;
+}
 
 .box-filme {
-    height: 85% !important;
-    width: 85% !important; 
-    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
-.carrosel-filmes{
-    margin-top: 5px;
+/* Rodapé */
+#rodape {
+    background-color: #252525;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#rodape ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#rodape li {
+    margin: 0 15px;
 }
