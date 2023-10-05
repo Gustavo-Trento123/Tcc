@@ -22,67 +22,53 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <title>The Real Score</title>
+
+    
 </head>
 
 <body>
     <div id="navegacao">
         <a href="index.html"><img src="./assets/img/logo2.png" class="logo"></a>
-        <center>
-            <ul class="menu">
-                <li><a href="#">Jogos</a></li>
-                <li><a href="#">Críticos</a></li>
-                <li><a href="#">Notícias</a></li>
-            </ul>
-        </center>
-
+        <ul class="menu">
+            <li><a href="#">Jogos</a></li>
+            <li><a href="#">Críticos</a></li>
+            <li><a href="#">Notícias</a></li>
+        </ul>
         <div id="usuario">
-                <img src="assets/img/usuario.png">
-
-            <!-- Modal Trigger -->
+            <img src="assets/img/usuario.png">
             <p><a class="waves-effect waves-light btn modal-trigger" href="#modal1">CONTA</a></p>
-
-            <!-- Modal Structure -->
             <div id="modal1" class="modal">
-                <center>
-                <div class="modal-content">
+                <div class="modal-content center-align">
                     <div id="titulo">    
                         <img class="logo-modal" src="assets/img/logo.png"><h4>The Real Score</h4>
                     </div>
+                    <div id="logins">
+                        <img src="assets/img/logins.png">
+                        <br>OU<br>
+                        <input class="boxes" type="text" placeholder="E-MAIL OU TELEFONE" name="usuario">
+                        <input class="boxes" type="password" placeholder="SENHA" name="senha"><br>
+                        <input class="submit" type="submit" Value="ENVIAR">
+                    </div>
                 </div>
-                
-                <div id="logins">
-                    
-                    <img src="assets/img/logins.png">
-                
-                    <br>OU<br>
-                    
-                    <input class="boxes" type="text" value="E-MAIL OU TELEFONE"   name="usuario">
-                    <input class="boxes" type="text" value="SENHA" name="senha"><br>
-                    <input class="submit" type="submit" Value="ENVIAR">
-                </div>
-
-                <!-- <div class="modal-footer">
-                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-                </div> -->
             </div>
-            </center>
         </div>
     </div>
 
     <!-- Carrossel principal -->
     <div id="conteudo">
+        <br><br>
         <div class="carousel">
             <div href="#one" class="carousel-item">
-                <img src="assets/img/carrosel1.jpg" alt="Carousel 1">
+                <img src="assets/img/carrosel1.jpg" alt="Jogo baldur's Gate" class="img-carossel">
             </div>
             <div href="#two" class="carousel-item">
-                <img src="assets/img/carrosel2.jpg" alt="Carousel 2">
+                <img src="assets/img/carrosel2.jpg" alt="Jogo Sea of Stars" class="img-carossel">
             </div>
             <div href="#three" class="carousel-item">
-                <img src="assets/img/carrosel3.jpg" alt="Carousel 3">
+                <img src="assets/img/carrosel3.jpg" alt="Jogo Starfield" class="img-carossel">
             </div>
             <div href="#four" class="carousel-item">
-                <img src="assets/img/carrosel4.jpg" alt="Carousel 4">
+                <img src="assets/img/carrosel4.jpg" alt="jogo Cs 2" class="img-carossel">
             </div>
         </div>
         <script type="text/javascript">
@@ -102,13 +88,13 @@
                 }
 
                 // Corrigir problema ao segurar o carrossel
-                carousel.on('mousedown', function () {
+                carousel.on('mousedown touchstart', function () {
                     clearInterval(autoplayInterval);
                 });
 
-                carousel.on('mouseup', function () {
+                carousel.on('mouseupm touchend', function () {
                     autoplayInterval = setInterval(autoplay, intervalo);
-                });
+                });   
             });
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -205,7 +191,7 @@
             <li>Contato</li>
             <li>Sobre nós</li>
         </ul>
-        <p>The Real Score 2023 Todos os direitos reservados.</p>
+        <p>© 2023 The Real Score  Todos os direitos reservados.</p>
     </div>
 </body>
 </html>

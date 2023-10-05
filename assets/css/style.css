@@ -5,92 +5,9 @@
 }
 
 body{
-    background: #fff;;
+    background: #000000;;
     color:#fff;
     font-family: 'Averia Serif Libre', cursive;
-}
-
-/* Navegação */
-#navegacao {
-    background:#000 ;
-    height: 60px;
-    width: 100%; /*1360px*/
-}
-
-#conteudo {
-    width: 90%; /* 1224 px */
-    margin: 0 auto;
-}
-
-#rodape {
-    width: auto;
-    height: 200px;
-    background-color: #000;
-    color: whitesmoke;
-    font-size: 18px;
-    margin-top: 20px;
-   
-    text-align: center;
-}
-
-#rodape p{
-    font-size:13px ;
-    margin-top: 15px;
-}
-
-/*  Navegação */
-#navegacao{
-    margin: 0%;
-}
-
-.logo{
-    height: 60px;
-    position: absolute;
-    margin-left: 2%; 
-    width:10%; 
-}
-
-.menu{
-    list-style-type: none;
-    text-align: center;
-    align-content: center;
-    align-items: center;
-    align-self: start;
-    color: whitesmoke;
-    text-transform: uppercase;
-    
-    }
-
-.menu li{
-    display: inline;
-    margin: 0px 150px;
-    line-height: 60px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    background-color: #252525;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
-
-.logo {
-    width: 50px;
-    height: auto;
-}
-
-.menu {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-}
-
-.menu li {
-    margin: 0 15px;
 }
 
 a {
@@ -102,33 +19,83 @@ a:hover{
     color:whitesmoke !important;
 }
 
-#usuario{
+/* Navegação */
+#navegacao {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #252525;
+    min-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 0 2%; /* Aumentar o espaço nas margens para centralizar o conteúdo */
+}
+
+@media (max-width: 800px) {
+    #navegacao {
+      flex-wrap: wrap;
+      justify-content: center;
+      justify-content: space-around;
+    }
+}
+
+.logo {
+    display: flex;
+    height: 55px;
+    width: 181px;
+    align-items: center;
+}
+
+.menu {
+    list-style-type: none;
+    text-align: center;
+    color: whitesmoke;
+    text-transform: uppercase;
+    display: flex; /* Adicione flex para alinhar itens horizontalmente */
+}
+
+.menu li {
+    margin: 0 20px;
     line-height: 60px;
-    height: 60px;
-    width:10%;
-    position:relative;
-    left:87%;
-    top:-100%;
+    width: 100px !important;
 }
 
-#usuario img{
+.menu a {
+    color: whitesmoke !important;
+    text-decoration: none;
+    
+}
+
+.menu a:hover {
+    color: #fff !important;
+}
+
+#usuario {
+    display: flex; /* Adicione flex para alinhar o ícone e o texto verticalmente */
+    align-items: center;
+}
+
+#usuario img {
     height: 75%;
-    margin-top:7px;
-    width:25%;
+    margin-top: 7px;
+    width: 25%;
+    margin-right: 10px; /* Adicione um espaçamento à direita do ícone */
 }
 
-#usuario p{
-    position:relative;
-    top:-125%;
-    left: 50%;
+#usuario p {
+    margin: 0; /* Remova o deslocamento para cima e centralize verticalmente */
 }
 
 .modal{
     color:#fff;
     background-color: #000 !important;
-    max-height: 90% !important;
+    height: 100%  !important;
+    padding: 0px !important;
 }
-
 
 .logo-modal{
     width:70px !important;
@@ -147,6 +114,7 @@ a:hover{
 .boxes{
     background:#fff !important;
     width:50% !important;
+    padding: 0px 5px !important;
 }
 
 .submit{
@@ -154,26 +122,14 @@ a:hover{
     border: 0px solid black;
     border-radius: 2px;
     height: 50px;
-    width: 60px;
-}
-
-
-/*Carrossel*/
-a:hover {
-    color: #FA531B !important;
-}
-
-/* Conteúdo */
-#conteudo {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    width: 65px;
+    padding: 0px 5px !important;
 }
 
 /* Carrossel */
 .carousel {
     max-width: 100% !important;
+    top: 20px;
 }
 
 .carousel img {
@@ -182,17 +138,35 @@ a:hover {
 }
 
 .carousel .carousel-item{
-    width: 650px !important;
-    height: 350px !important;
+    width: 650px !important; /* 650px */
+    height: auto !important; /* 350px */
 }
+
+.carousel .indicators{
+    background-color: black;
+    width:max-content;
+    height: max-content;
+    border-radius: 15px;
+    margin: 0px auto !important;
+}
+
+.carousel .indicators .indicator-item{
+    margin: 0px 5px 0px 5px !important;
+}
+
 
 /* Catálogo de Jogos */
 .carrosel-filmes h5 {
     margin-top: 20px;
+    padding-left: 15px;
 }
 
 .owl-carousel .item {
     margin-right: 10px;
+}
+
+.owl-dots{
+    display: none;
 }
 
 .box-filme {
@@ -208,14 +182,18 @@ a:hover {
     padding: 20px 0;
 }
 
-#rodape ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
+/* Rodapé */
+#rodape {
+    width: auto;
+    height: 200px;
+    background-color: #000;
+    color: whitesmoke;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
 }
 
-#rodape li {
-    margin: 0 15px;
+#rodape p{
+    font-size:13px ;
+    margin-top: 15px;
 }
