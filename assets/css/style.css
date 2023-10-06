@@ -123,7 +123,9 @@ a:hover{
 }
 .sidenav{
     background-color:#252525 !important;
-    color: white !important;
+}
+.sidenav-overlay{
+    display: none !important;
 }
 
 /* Carrossel */
@@ -135,6 +137,11 @@ a:hover{
 .carousel img {
     max-width: 100% !important;
     height: auto !important;
+}
+@media (max-width: 600px) {
+   .carousel img{
+    scale: 0.6;
+   }
 }
 
 .carousel .carousel-item{
@@ -180,17 +187,6 @@ a:hover{
     color: whitesmoke;
     text-align: center;
     padding: 20px 0;
-}
-
-/* Rodapé */
-#rodape {
-    width: auto;
-    height: 200px;
-    background-color: #000;
-    color: whitesmoke;
-    font-size: 18px;
-    margin-top: 20px;
-    text-align: center;
 }
 
 #rodape p{

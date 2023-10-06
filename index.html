@@ -39,6 +39,10 @@
             <li><a href="#">Críticos</a></li>
             <li><a href="#">Notícias</a></li>
         </ul>
+        <div id="usuario" class="right hide-on-med-and-down">
+            <img src="assets/img/usuario.png">
+            <p><a class="waves-effect waves-light btn modal-trigger" href="#modal1">CONTA</a></p>
+        </div>
         <div class="sidenav" id="mobile-demo">
             <ul>
                 <li><a href="#">Jogos</a></li>
@@ -51,24 +55,6 @@
                 <p><a class="waves-effect waves-light btn modal-trigger" href="#modal1">CONTA</a></p>
             </div>
         </div>
-        <div id="usuario" class="right hide-on-med-and-down">
-            <img src="assets/img/usuario.png">
-            <p><a class="waves-effect waves-light btn modal-trigger" href="#modal1">CONTA</a></p>
-            <div id="modal1" class="modal">
-                <div class="modal-content center-align">
-                    <div id="titulo">    
-                        <img class="logo-modal" src="assets/img/logo.png"><h4>The Real Score</h4>
-                    </div>
-                    <div id="logins">
-                        <img src="assets/img/logins.png">
-                        <br>OU<br>
-                        <input class="boxes" type="text" placeholder="E-MAIL OU TELEFONE" name="usuario">
-                        <input class="boxes" type="password" placeholder="SENHA" name="senha"><br>
-                        <input class="submit" type="submit" Value="ENVIAR">
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <!-- Carrossel principal -->
@@ -76,16 +62,16 @@
         <br><br>
         <div class="carousel">
             <div href="#one" class="carousel-item">
-                <img src="assets/img/carrosel1.jpg" alt="Jogo baldur's Gate" class="img-carossel">
+                <img src="assets/img/carrosel/carrosel1.jpg" alt="Jogo baldur's Gate" class="img-carossel">
             </div>
             <div href="#two" class="carousel-item">
-                <img src="assets/img/carrosel2.jpg" alt="Jogo Sea of Stars" class="img-carossel">
+                <img src="assets/img/carrosel/carrosel2.jpg" alt="Jogo Sea of Stars" class="img-carossel">
             </div>
             <div href="#three" class="carousel-item">
-                <img src="assets/img/carrosel3.jpg" alt="Jogo Starfield" class="img-carossel">
+                <img src="assets/img/carrosel/carrosel3.jpg" alt="Jogo Starfield" class="img-carossel">
             </div>
             <div href="#four" class="carousel-item">
-                <img src="assets/img/carrosel4.jpg" alt="jogo Cs 2" class="img-carossel">
+                <img src="assets/img/carrosel/carrosel4.jpg" alt="jogo Cs 2" class="img-carossel">
             </div>
         </div>
         <script type="text/javascript">
@@ -194,13 +180,7 @@
         </div>
         <script src="./assets/script/Owl/owl.carousel.min.js"></script>
         <script src="./assets/script/Owl/main.js"></script>
-
-        <!-- Modal Script -->
-        <script>   
-          $(document).ready(function(){
-            $('.modal').modal();
-          });
-        </script>
+        <br><br> 
     </div>
 
     <div id="rodape">
@@ -212,5 +192,27 @@
         </ul>
         <p>© 2023 The Real Score  Todos os direitos reservados.</p>
     </div>
+
+    <!-- Modal Login -->
+    <div id="modal1" class="modal">
+        <div class="modal-content center-align">
+            <div id="titulo">    
+                <img class="logo-modal" src="assets/img/logo.png"><h4>The Real Score</h4>
+            </div>
+            <div id="logins">
+                <img src="assets/img/logins.png">
+                <br>OU<br>
+                <input class="boxes" type="text" placeholder="E-MAIL OU TELEFONE" name="usuario">
+                <input class="boxes" type="password" placeholder="SENHA" name="senha"><br>
+                <input class="submit" type="submit" Value="ENVIAR">
+            </div>
+        </div>
+        <script>   
+            $(document).ready(function(){
+              $('.modal').modal();
+            });
+          </script>
+    </div>
+    
 </body>
 </html>
