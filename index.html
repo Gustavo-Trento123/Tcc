@@ -26,7 +26,6 @@
     <!-- icones materialize -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>The Real Score</title>
-
     
 </head>
 
@@ -35,7 +34,7 @@
         <a href="index.html"><img src="./assets/img/logo2.png" class="logo brand-logo"></a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-medium-and-down"><i class="material-icons ">menu</i></a>
         <ul id="nav-mobile" class="menu right hide-on-med-and-down">
-            <li><a href="#">Jogos</a></li>
+            <li><a class='dropdown-trigger' href='#' data-target='dropdown1'>Jogos</a></li>
             <li><a href="#">Críticos</a></li>
             <li><a href="#">Notícias</a></li>
         </ul>
@@ -45,7 +44,7 @@
         </div>
         <div class="sidenav" id="mobile-demo">
             <ul>
-                <li><a href="#">Jogos</a></li>
+                <li><a class='dropdown-trigger' href='#' data-target='dropdown2'>Jogos</a></li>
                 <li><a href="#">Críticos</a></li>
                 <li><a href="#">Notícias</a></li>
             </ul>
@@ -55,6 +54,22 @@
                 <p><a class="waves-effect waves-light btn modal-trigger" href="#modal1">CONTA</a></p>
             </div>
         </div>
+        <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="#!">three</a></li>
+            <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+            <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+          </ul>
+          <ul id='dropdown2' class='dropdown-content'>
+            <li><a href="#!">one</a></li>
+            <li><a href="#!">two</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="#!">three</a></li>
+            <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+            <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+          </ul>
     </div>
 
     <!-- Carrossel principal -->
@@ -211,9 +226,10 @@
         <script>   
             $(document).ready(function(){
               $('.modal').modal();
+              $('.dropdown-trigger').dropdown();
             });
           </script>
     </div>
-    
+
 </body>
 </html>
