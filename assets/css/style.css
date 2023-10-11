@@ -1,101 +1,219 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 'Averia Serif Libre', cursive;
 }
 
 body{
-    background-color: lightcyan;
+    background: #000000;;
+    color:#fff;
+    font-family: 'Averia Serif Libre', cursive;
 }
 
-#navegacao {
-    background-color: #252525;
-    height: 60px;
-    width: 100%; /*1360px*/
-}
-
-#conteudo {
-    width: 90%; /* 1224 px */
-    margin: 0 auto;
-}
-
-#conteudo-carrosel {
-    width: 89.86%; /* 1100px */
-    height: 393px;
-    margin: 5.12% auto 2.9%;
-}
-
-#catalogo {
-    /* margin-left: 2.6%; */
-}
-
-#rodape {
-    width: 100%;
-    height: 200px;
-    background-color: #252525;
-    color: whitesmoke;
-    font-size: 18px;
-    margin-top: 20px;
-    padding:50px 570px 50px 570px;
-    text-align: center;
-}
-
-#rodape p{
-    font-size:13px ;
-    margin-top: 15px;
-}
-
-/*  Navegação */
-#navegacao{
-    margin: 0%;
-}
-
-.logo{
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    margin: 7.5px 0px 7.5px 50px;
-    position: absolute;
-    
-}
-
-.menu{
-    list-style-type: none;
-    text-align: center;
-    align-content: center;
-    align-items: center;
-    align-self: start;
-    color: whitesmoke;
-    text-transform: uppercase;
-    }
-
-.menu li{
-    display: inline;
-    margin: 0px 150px;
-    line-height: 60px;
-}
-
-a{
+a {
     color: whitesmoke !important;
+    text-decoration: none;
 }
 
 a:hover{
-    color:#FA531B !important;
+    color: white !important;
 }
 
-/*Carrossel*/
+/* Navegação */
+#navegacao { /* O corpo da barra de navegação */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #252525;
+    min-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 0 2%; /* Aumentar o espaço nas margens para centralizar o conteúdo */
+}
+
+.arrow {/* Seta para indicar o dropdown no menu jogos*/
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    position: relative;
+    bottom:5%;
+  } 
+
+.down{/* Rotação da seta para indicar o dropdown no menu jogos */
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+#navegacao .logo { /* Configuração das proporções da logo */
+    display: flex;
+    height: 55px;
+    width: 181px;
+    align-items: center;
+}
+
+#navegacao .menu { /* Configuração do menu */
+    list-style-type: none;
+    text-align: center;
+    color: whitesmoke;
+    text-transform: uppercase;
+    display: flex; /* Adicione flex para alinhar itens horizontalmente */
+}
+
+#navegacao .menu li { /* Configuração do menu */
+    margin: 0 20px;
+    line-height: 60px;
+    width: 100px !important;
+}
+
+#navegacao .menu a { /* Configuração dos links no menu da navbar */
+    color: whitesmoke !important;
+    text-decoration: none;
+    
+}
+
+#navegacao .menu a:hover { /* Hover dos links do menu */
+    color: #fff !important;
+}
+
+#navegacao .usuario { /* Configuração do alinhamento do icone de usuário e texto */
+    display: flex; /* Adicione flex para alinhar o ícone e o texto verticalmente */
+    align-items: center;
+}
+
+.btn{ /* Configuração das cores do botão */
+    background-color: #fff !important;
+    color:black !important;
+}
+
+#navegacao .usuario img { /* Configuração da imagem que representa o usuário no navbar */
+    height: 75%;
+    margin-top: 7px;
+    width: 25%;
+    margin-right: 10px; /* Adicione um espaçamento à direita do ícone */
+}
+
+/* Modal */
+
+.modal{ /* O corpo do modal */
+    color:#fff;
+    background-color: #000 !important;
+    height: 100%  !important;
+    width: 40% !important;
+    padding: 0px !important;
+}
+
+.logo-modal{ /* A logo presente quando se abre o modal */
+    width:70px !important;
+    height:70px !important;
+}
+
+#titulo{ /* O titulo abaixo da logo */
+    margin: 0 auto;
+}
+
+#logins img{ /* Imagens do modal representando as formas de login */
+    width:50%;
+    height: 45%;
+}
+
+.boxes{ /* Inputs para inserção de login */
+    background:#fff !important;
+    width:50% !important;
+    padding: 0px 5px !important;
+}
+
+/* Menu responsivo */
+.submit{ /* Botão para enviar os dados */
+    background-color: #fff;
+    border: 0px solid black;
+    border-radius: 2px;
+    height: 50px;
+    width: 65px;
+    padding: 0px 5px !important;
+}
+
+.sidenav-trigger{ /* Botão do menu responsivo */
+    display: none;
+}
+.sidenav{ /* Corpo do menu responsivo */
+    background-color:#252525 !important;
+}
+.sidenav-overlay{
+    display: none !important;
+}
+
+/* Dropdown */
+#dropdown1{ /* Corpo do Dropdown */
+    background-color: #252525;
+    width:100% !important;
+    height: 430px !important;
+    left:-0% !important;
+    top: 100% !important;
+}
+
+#dropdown2{ /* Corpo do dropdown responsivo */
+    background-color: #252525;
+}
+
+#dropdown1 ul{ /* Alinhamento das li's do dropdown */
+    display: inline !important;
+}
+
+#dropdown1 ul{ /* Alinhamento do texto da dropdown */
+    text-align: center;
+}
+
+#dropdown-jogos, #dropdown-noticias, #dropdown-temas{
+    width:19%;
+    height:400px;
+    display: inline;
+    position: relative;
+    margin:0 50px;
+    /* border: 0px; */
+}
+
+#dropdown-temas{
+    position: relative;
+    top:-14.25%;
+}
+
+#dropdown-noticias{
+    position: relative;
+    top:-39%;
+}
+
+.dropdown-content li:hover{
+    background-color:transparent !important;
+}
+
+/* Carrossel */
 .carousel {
-    height: 100% !important;
-    width: 100% !important;
+    max-width: 100% !important;
+    top: 20px;
 }
 
-.carousel .carousel-item {
-    width: 50% !important;
-    height: 100% !important;
+.carousel img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+@media (max-width: 600px) {
+   .carousel img{
+    scale: 0.6;
+   }
+}
+
+.carousel .carousel-item{
+    width: 650px !important; /* 650px */
+    height: auto !important; /* 350px */
 }
 
 .carousel .indicators{
     background-color: black;
-    
     width:max-content;
     height: max-content;
     border-radius: 15px;
@@ -106,14 +224,35 @@ a:hover{
     margin: 0px 5px 0px 5px !important;
 }
 
-/* Catalogo */
 
-.box-filme {
-    height: 100%;
-    width: 100%;
-    display: block;
+/* Catálogo de Jogos */
+.carrosel-filmes h5 {
+    margin-top: 20px;
+    padding-left: 15px;
 }
 
-.carrosel-filmes{
-    margin-top: 5px;
+.owl-carousel .item {
+    margin-right: 10px;
+}
+
+.owl-dots{
+    display: none;
+}
+
+.box-filme {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Rodapé */
+#rodape {
+    background-color: #252525;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#rodape p{
+    font-size:13px ;
+    margin-top: 15px;
 }
