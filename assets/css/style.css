@@ -35,6 +35,19 @@ a:hover{
     padding: 0 2%; /* Aumentar o espaço nas margens para centralizar o conteúdo */
 }
 
+.arrow {/* Seta para indicar o dropdown */
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    position: relative;
+    bottom:5%;
+  } 
+
+.down{/* Seta para indicar o dropdown */
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
 #navegacao .logo {
     display: flex;
     height: 55px;
@@ -126,6 +139,50 @@ a:hover{
 }
 .sidenav-overlay{
     display: none !important;
+}
+
+/* Dropdown */
+#dropdown1{
+    background-color: #252525;
+    width:100% !important;
+    height: 430px !important;
+    left:-0% !important;
+    top: 100% !important;
+}
+
+#dropdown2{
+    background-color: #252525;
+}
+
+#dropdown1 ul{
+    display: inline !important;
+}
+
+#dropdown1 ul{
+    text-align: center;
+}
+
+#dropdown-jogos, #dropdown-noticias, #dropdown-temas{
+    width:19%;
+    height:400px;
+    display: inline;
+    position: relative;
+    margin:0 50px;
+    /* border: 0px; */
+}
+
+#dropdown-temas{
+    position: relative;
+    top:-14.25%;
+}
+
+#dropdown-noticias{
+    position: relative;
+    top:-39%;
+}
+
+.dropdown-content li:hover{
+    background-color:transparent !important;
 }
 
 /* Carrossel */
