@@ -20,7 +20,7 @@ a:hover{
 }
 
 /* Navegação */
-#navegacao {
+#navegacao { /* O corpo da barra de navegação */
     position: fixed;
     top: 0;
     left: 0;
@@ -35,7 +35,7 @@ a:hover{
     padding: 0 2%; /* Aumentar o espaço nas margens para centralizar o conteúdo */
 }
 
-.arrow {/* Seta para indicar o dropdown */
+.arrow {/* Seta para indicar o dropdown no menu jogos*/
     border: solid rgb(255, 255, 255);
     border-width: 0 3px 3px 0;
     display: inline-block;
@@ -44,18 +44,19 @@ a:hover{
     bottom:5%;
   } 
 
-.down{/* Seta para indicar o dropdown */
+.down{/* Rotação da seta para indicar o dropdown no menu jogos */
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
-#navegacao .logo {
+
+#navegacao .logo { /* Configuração das proporções da logo */
     display: flex;
     height: 55px;
     width: 181px;
     align-items: center;
 }
 
-#navegacao .menu {
+#navegacao .menu { /* Configuração do menu */
     list-style-type: none;
     text-align: center;
     color: whitesmoke;
@@ -63,66 +64,71 @@ a:hover{
     display: flex; /* Adicione flex para alinhar itens horizontalmente */
 }
 
-#navegacao .menu li {
+#navegacao .menu li { /* Configuração do menu */
     margin: 0 20px;
     line-height: 60px;
     width: 100px !important;
 }
 
-#navegacao .menu a {
+#navegacao .menu a { /* Configuração dos links no menu da navbar */
     color: whitesmoke !important;
     text-decoration: none;
     
 }
 
-#navegacao .menu a:hover {
+#navegacao .menu a:hover { /* Hover dos links do menu */
     color: #fff !important;
 }
 
-#navegacao .usuario {
+#navegacao .usuario { /* Configuração do alinhamento do icone de usuário e texto */
     display: flex; /* Adicione flex para alinhar o ícone e o texto verticalmente */
     align-items: center;
 }
 
-#navegacao .usuario img {
+.btn{ /* Configuração das cores do botão */
+    background-color: #fff !important;
+    color:black !important;
+}
+
+#navegacao .usuario img { /* Configuração da imagem que representa o usuário no navbar */
     height: 75%;
     margin-top: 7px;
     width: 25%;
     margin-right: 10px; /* Adicione um espaçamento à direita do ícone */
 }
 
-#navegacao .usuario p {
-    margin: 0; /* Remova o deslocamento para cima e centralize verticalmente */
-}
+/* Modal */
 
-.modal{
+.modal{ /* O corpo do modal */
     color:#fff;
     background-color: #000 !important;
     height: 100%  !important;
+    width: 40% !important;
     padding: 0px !important;
 }
 
-.logo-modal{
+.logo-modal{ /* A logo presente quando se abre o modal */
     width:70px !important;
     height:70px !important;
 }
 
-#titulo{
+#titulo{ /* O titulo abaixo da logo */
     margin: 0 auto;
 }
 
-#logins img{
-    width:30%;
-    height: 25%;
+#logins img{ /* Imagens do modal representando as formas de login */
+    width:50%;
+    height: 45%;
 }
 
-.boxes{
+.boxes{ /* Inputs para inserção de login */
     background:#fff !important;
     width:50% !important;
     padding: 0px 5px !important;
 }
 
-.submit{
+/* Menu responsivo */
+.submit{ /* Botão para enviar os dados */
     background-color: #fff;
     border: 0px solid black;
     border-radius: 2px;
@@ -131,10 +137,10 @@ a:hover{
     padding: 0px 5px !important;
 }
 
-.sidenav-trigger{
+.sidenav-trigger{ /* Botão do menu responsivo */
     display: none;
 }
-.sidenav{
+.sidenav{ /* Corpo do menu responsivo */
     background-color:#252525 !important;
 }
 .sidenav-overlay{
@@ -142,7 +148,7 @@ a:hover{
 }
 
 /* Dropdown */
-#dropdown1{
+#dropdown1{ /* Corpo do Dropdown */
     background-color: #252525;
     width:100% !important;
     height: 430px !important;
@@ -150,15 +156,15 @@ a:hover{
     top: 100% !important;
 }
 
-#dropdown2{
+#dropdown2{ /* Corpo do dropdown responsivo */
     background-color: #252525;
 }
 
-#dropdown1 ul{
+#dropdown1 ul{ /* Alinhamento das li's do dropdown */
     display: inline !important;
 }
 
-#dropdown1 ul{
+#dropdown1 ul{ /* Alinhamento do texto da dropdown */
     text-align: center;
 }
 
