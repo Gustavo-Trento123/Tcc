@@ -31,7 +31,6 @@ a:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    display: flex;
     padding: 0 2%; /* Aumentar o espaço nas margens para centralizar o conteúdo */
 }
 
@@ -67,7 +66,7 @@ a:hover{
 #navegacao .menu li { /* Configuração do menu */
     margin: 0 20px;
     line-height: 60px;
-    width: 100px !important;
+    width: 100px;
 }
 
 #navegacao .menu a { /* Configuração dos links no menu da navbar */
@@ -142,6 +141,7 @@ a:hover{
 }
 .sidenav{ /* Corpo do menu responsivo */
     background-color:#252525 !important;
+    width: 80% !important;
 }
 .sidenav-overlay{
     display: none !important;
@@ -151,40 +151,52 @@ a:hover{
 #dropdown1{ /* Corpo do Dropdown */
     background-color: #252525;
     width:100% !important;
-    height: 430px !important;
+    height: 380px !important;
     left:-0% !important;
     top: 100% !important;
+    
 }
+/* Problema
+Problema
+Problema
+Problema
+Problema
+Problema
+Problema
+Problema
+Problema
+Problema
+Problema
+Problema
+Problema
+Problema
+Problema
+Problema */
 
-#dropdown2{ /* Corpo do dropdown responsivo */
+#dropdown2{
+    top: 0px!important;
     background-color: #252525;
+    z-index: -100000000;
+    flex-direction: column !important;    
+}
+.sidenav li > a{
+    display: flex !important;
+    position: relative !importan;
 }
 
-#dropdown1 ul{ /* Alinhamento das li's do dropdown */
-    display: inline !important;
+.dropdown-content{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-evenly !important;
+    
 }
 
-#dropdown1 ul{ /* Alinhamento do texto da dropdown */
-    text-align: center;
-}
-
-#dropdown-jogos, #dropdown-noticias, #dropdown-temas{
-    width:19%;
-    height:400px;
-    display: inline;
-    position: relative;
-    margin:0 50px;
-    /* border: 0px; */
-}
-
-#dropdown-temas{
-    position: relative;
-    top:-14.25%;
-}
-
-#dropdown-noticias{
-    position: relative;
-    top:-39%;
+.dropdown-jogos li{
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start !important;
+    width: 300px !important;
+    z-index: -100;
 }
 
 .dropdown-content li:hover{

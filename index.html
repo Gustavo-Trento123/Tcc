@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    
+
     <!-- Carrossel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-   
+
     <!-- Catálogo de Jogos -->
     <link rel="stylesheet" href="./assets/css/Owl/owl.carousel.min.css">
     <!-- Opcional theme.defaul não sei o que faz -->
     <link rel="stylesheet" href="./assets/css/Owl/owl.theme.default.min.css">
 
     <!-- jquery -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"> 
-	</script> 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js">
+    </script>
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +26,7 @@
     <!-- icones materialize -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>The Real Score</title>
-    
+
 </head>
 
 <body>
@@ -37,11 +37,11 @@
             <li><a class='dropdown-trigger' href='#' data-target='dropdown1'>Jogos &nbsp<i class="arrow down"></i></a></li>
             <li><a href="#">Críticos</a></li>
             <li><a href="#">Notícias</a></li>
+            <div class="usuario right hide-on-med-and-down">
+                <img src="assets/img/usuario.png">
+                <p><a class="waves-effect waves-light btn modal-trigger" href="#modal1">CONTA</a></p>
+            </div>
         </ul>
-        <div class="usuario right hide-on-med-and-down">
-            <img src="assets/img/usuario.png">
-            <p><a class="waves-effect waves-light btn modal-trigger" href="#modal1">CONTA</a></p>
-        </div>
         <div class="sidenav" id="mobile-demo">
             <ul>
                 <li><a class="sidenav-close" href="#!"><i class="material-icons" style="color:white; margin: 0 0 0 100%;">close</i></a></li>
@@ -56,15 +56,14 @@
             </div>
         </div>
         <ul id='dropdown1' class='dropdown-content'>
-            <fieldset id="dropdown-jogos">
+            <fieldset class="dropdown-jogos">
                 <legend>Mundo dos Jogos</legend>
                 <li><a href="#!">Em Alta</a></li>
                 <li><a href="#!">Lançamentos</a></li>
                 <li><a href="#!">Top de Todos os Tempos</a></li>
                 <li><a href="#!">Em Alta</a></li>
             </fieldset>
-
-            <fieldset id="dropdown-temas">
+            <fieldset class="dropdown-jogos">
                 <legend>Temas</legend>
                 <li><a>Ação</a></li>
                 <li><a>Aventura</a></li>
@@ -72,25 +71,21 @@
                 <li><a>Estratégia</a></li>
                 <li><a>RPG</a></li>
             </fieldset>
-
-            <fieldset id="dropdown-noticias">
+            <fieldset class="dropdown-jogos">
                 <legend>Fique por Dentro</legend>
                 <li><a>Novidades</a></li>
                 <li><a>The Game Awards</a></li>
             </fieldset>
-
         </ul>
-
         <ul id='dropdown2' class='dropdown-content'>
-            <fieldset id="dropdown-jogos">
+            <fieldset class="dropdown-jogos">
                 <legend>Mundo dos Jogos</legend>
                 <li><a href="#!">Em Alta</a></li>
                 <li><a href="#!">Lançamentos</a></li>
                 <li><a href="#!">Top de Todos os Tempos</a></li>
                 <li><a href="#!">Em Alta</a></li>
             </fieldset>
-
-            <fieldset id="dropdown-temas">
+            <fieldset class="dropdown-jogos">
                 <legend>Temas</legend>
                 <li><a>Ação</a></li>
                 <li><a>Aventura</a></li>
@@ -98,18 +93,16 @@
                 <li><a>Estratégia</a></li>
                 <li><a>RPG</a></li>
             </fieldset>
-
-            <fieldset id="dropdown-noticias">
+            <fieldset class="dropdown-jogos">
                 <legend>Fique por Dentro</legend>
                 <li><a>Novidades</a></li>
                 <li><a>The Game Awards</a></li>
             </fieldset>
-
         </ul>
     </div>
 
     <!-- Carrossel principal -->
-    
+
     <div id="conteudo">
         <br><br>
         <div class="carousel">
@@ -149,14 +142,13 @@
 
                 carousel.on('mouseupm touchend', function () {
                     autoplayInterval = setInterval(autoplay, intervalo);
-                });   
+                });
             });
         </script>
-        <script src= 
-        "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"> 
-            </script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+        </script>
         <script>
-            $(document).ready(function(){
+            $(document).ready(function () {
                 $('.sidenav').sidenav();
             });
 
@@ -233,7 +225,7 @@
         </div>
         <script src="./assets/script/Owl/owl.carousel.min.js"></script>
         <script src="./assets/script/Owl/main.js"></script>
-        <br><br> 
+        <br><br>
     </div>
 
     <div id="rodape">
@@ -243,14 +235,15 @@
             <li>Contato</li>
             <li>Sobre nós</li>
         </ul>
-        <p>© 2023 The Real Score  Todos os direitos reservados.</p>
+        <p>© 2023 The Real Score Todos os direitos reservados.</p>
     </div>
 
     <!-- Modal Login -->
     <div id="modal1" class="modal">
         <div class="modal-content center-align">
-            <div id="titulo">    
-                <img class="logo-modal" src="assets/img/logo.png"><h4>The Real Score</h4>
+            <div id="titulo">
+                <img class="logo-modal" src="assets/img/logo.png">
+                <h4>The Real Score</h4>
             </div>
             <div id="logins">
                 <img src="assets/img/logins.png">
@@ -262,15 +255,16 @@
         </div>
 
         <!-- Dropdown Script -->
-        <script>   
-            $(document).ready(function(){
-              $('.modal').modal();
-              $('.dropdown-trigger').dropdown();
-              hover:false
+        <script>
+            $(document).ready(function () {
+                $('.modal').modal();
+                $('.dropdown-trigger').dropdown();
+                hover: false
             });
         </script>
 
     </div>
 
 </body>
+
 </html>
