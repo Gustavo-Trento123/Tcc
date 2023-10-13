@@ -26,7 +26,6 @@
     <!-- icones materialize -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>The Real Score</title>
-
 </head>
 
 <body>
@@ -37,50 +36,52 @@
             <li><a class='dropdown-trigger' href='#' data-target='dropdown1'>Jogos &nbsp<i class="arrow down"></i></a></li>
             <li><a href="#">Críticos</a></li>
             <li><a href="#">Notícias</a></li>
-            <div class="usuario right hide-on-med-and-down">
-                <img src="assets/img/usuario.png">
-                <p><a class="waves-effect waves-light btn modal-trigger" href="#modal1">CONTA</a></p>
-            </div>
         </ul>
+        <div class="usuario right hide-on-med-and-down">
+            <img src="assets/img/usuario.png">
+            <p><a class="waves-effect waves-light btn modal-trigger" href="#modal1">CONTA</a></p>
+        </div>
         <div class="sidenav" id="mobile-demo">
             <ul>
                 <li><a class="sidenav-close" href="#!"><i class="material-icons" style="color:white; margin: 0 0 0 100%;">close</i></a></li>
-                <li><a class='dropdown-trigger' href='#' data-target='dropdown2'>Jogos</a></li>
+                <li>
+                    <a class='dropdown-trigger' href='#' data-target='dropdown2'>Jogos</a>
+                    <ul id='dropdown2' class='dropdown-content-sidnav' style="position: relative;">
+                        <fieldset class="dropdown-jogos">
+                            <legend>Mundo dos Jogos</legend>
+                            <li><a href="#emalta">Em Alta</a></li>
+                            <li><a href="#!">Lançamentos</a></li>
+                            <li><a href="#!">Top de Todos os Tempos</a></li>
+                            <li><a href="#!">Em Alta</a></li>
+                        </fieldset>
+                        <fieldset class="dropdown-jogos">
+                            <legend>Temas</legend>
+                            <li><a>Ação</a></li>
+                            <li><a>Aventura</a></li>
+                            <li><a>Terror</a></li>
+                            <li><a>Estratégia</a></li>
+                            <li><a>RPG</a></li>
+                        </fieldset>
+                        <fieldset class="dropdown-jogos">
+                            <legend>Fique por Dentro</legend>
+                            <li><a>Novidades</a></li>
+                            <li><a>The Game Awards</a></li>
+                        </fieldset>
+                    </ul>
+                </li>
                 <li><a href="#">Críticos</a></li>
                 <li><a href="#">Notícias</a></li>
+                <br><br>
+                <div class="usuario">
+                    <img src="assets/img/usuario.png">
+                    <p><a class="waves-effect waves-light btn modal-trigger" href="#modal1">CONTA</a></p>
+                </div>
             </ul>
-            <br><br>
-            <div class="usuario">
-                <img src="assets/img/usuario.png">
-                <p><a class="waves-effect waves-light btn modal-trigger" href="#modal1">CONTA</a></p>
-            </div>
         </div>
         <ul id='dropdown1' class='dropdown-content'>
             <fieldset class="dropdown-jogos">
                 <legend>Mundo dos Jogos</legend>
-                <li><a href="#!">Em Alta</a></li>
-                <li><a href="#!">Lançamentos</a></li>
-                <li><a href="#!">Top de Todos os Tempos</a></li>
-                <li><a href="#!">Em Alta</a></li>
-            </fieldset>
-            <fieldset class="dropdown-jogos">
-                <legend>Temas</legend>
-                <li><a>Ação</a></li>
-                <li><a>Aventura</a></li>
-                <li><a>Terror</a></li>
-                <li><a>Estratégia</a></li>
-                <li><a>RPG</a></li>
-            </fieldset>
-            <fieldset class="dropdown-jogos">
-                <legend>Fique por Dentro</legend>
-                <li><a>Novidades</a></li>
-                <li><a>The Game Awards</a></li>
-            </fieldset>
-        </ul>
-        <ul id='dropdown2' class='dropdown-content'>
-            <fieldset class="dropdown-jogos">
-                <legend>Mundo dos Jogos</legend>
-                <li><a href="#!">Em Alta</a></li>
+                <li><a href="#emalta">Em Alta</a></li>
                 <li><a href="#!">Lançamentos</a></li>
                 <li><a href="#!">Top de Todos os Tempos</a></li>
                 <li><a href="#!">Em Alta</a></li>
@@ -100,7 +101,6 @@
             </fieldset>
         </ul>
     </div>
-
     <!-- Carrossel principal -->
 
     <div id="conteudo">
@@ -158,7 +158,7 @@
     <!-- Catálogo de Jogos -->
     <div id="catalogo">
         <div class="carrosel-filmes">
-            <h5>Em alta:</h5>
+            <h5 id="emalta">Em alta:</h5>
             <div class="owl-carousel owl-theme">
                 <div class="item">
                     <img class="box-filme" src="./assets/img/Catalogo/cs2.jpg" alt="jogo cs2">
@@ -258,10 +258,12 @@
         <script>
             $(document).ready(function () {
                 $('.modal').modal();
-                $('.dropdown-trigger').dropdown();
-                hover: false
+                $('.dropdown-trigger').dropdown({ 
+                    hover: false,
+                });
             });
         </script>
+        
 
     </div>
 

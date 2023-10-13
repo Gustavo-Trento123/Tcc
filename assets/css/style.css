@@ -153,43 +153,32 @@ a:hover{
     width:100% !important;
     height: 380px !important;
     left:-0% !important;
-    top: 100% !important;
-    
+    top: 100% !important;   
 }
-/* Problema
-Problema
-Problema
-Problema
-Problema
-Problema
-Problema
-Problema
-Problema
-Problema
-Problema
-Problema
-Problema
-Problema
-Problema
-Problema */
 
-#dropdown2{
+#dropdown2{ 
     top: 0px!important;
     background-color: #252525;
-    z-index: -100000000;
     flex-direction: column !important;    
 }
 .sidenav li > a{
     display: flex !important;
-    position: relative !importan;
+    position:relative !important;
 }
 
 .dropdown-content{
     display: flex !important;
     flex-direction: row !important;
     justify-content: space-evenly !important;
-    
 }
+
+.dropdown-content-sidnav{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-evenly !important;
+    display: none;
+}
+
 
 .dropdown-jogos li{
     display: flex;
@@ -198,6 +187,7 @@ Problema */
     width: 300px !important;
     z-index: -100;
 }
+
 
 .dropdown-content li:hover{
     background-color:transparent !important;
