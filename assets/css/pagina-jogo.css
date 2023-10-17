@@ -38,20 +38,42 @@
     margin:0 14px 0 0; 
 }
 
+#trailer iframe{
+    display:inline-block !important;
+    float:left;
+}
+
 #info-jogo{
     display: inline-block;
     text-align: center;
     position: relative;
     width:42%;/* 493px */
-    top: -135px;
+    height: 25% !important;
+    border:1px solid red;
 }
 
+
 #imagem-jogo{
-    width: 90%;/* 494px */
-    height: 200px;
+    width: 100%;/* 494px */
+    height: auto;
     
 }
 
 #game-content{
     height:392.5px;
+}
+
+@media (max-width:922px) {
+    #id-bar li{ /* font para celular */
+        font-size:small;
+    }
+    #info-jogo{
+        display: none !important;
+    }
+    #info-jogo2{
+        display: block !important;
+    }
+    #trailer iframe{
+        width: 100% !important;
+    }
 }
