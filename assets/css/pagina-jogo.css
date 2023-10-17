@@ -30,6 +30,7 @@
     margin:0 auto;
     padding: 10px;
     width: 89%; /* 1212 */
+    height: 2000px;
 }
 
 #trailer{
@@ -41,14 +42,14 @@
     display: inline-block;
     text-align: center;
     position: relative;
-    bottom:15px;
     width:42%;/* 493px */
+    top: -135px;
 }
 
 #imagem-jogo{
     width: 90%;/* 494px */
-    height: 321px;
-    position: relative;
+    height: 200px;
+    
 }
 
 #game-content{
