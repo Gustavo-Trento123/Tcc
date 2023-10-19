@@ -8,7 +8,7 @@
 
   <tr>
     <td>Gustavo Natan Trento</td>
-    <td><a href="https://github.com/Gustavo-Trento123">Gustavo-Trento123</td>
+    <td><a href="https://github.com/Gustavo-Trento123">@Gustavo-Trento123</td>
   </tr>
 
   <tr>
