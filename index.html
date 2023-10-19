@@ -261,8 +261,11 @@
         <script>   
             $(document).ready(function(){
               $('.modal').modal();
-              $('.dropdown-trigger').dropdown();
-              hover:false
+              $('.dropdown-trigger').dropdown({
+                hover:false,
+                closeOnClick:false,
+              });
+              
             });
         </script>
 
