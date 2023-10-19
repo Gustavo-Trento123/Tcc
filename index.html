@@ -51,16 +51,16 @@
                             <legend>Mundo dos Jogos</legend>
                             <li><a href="#emalta">Em Alta</a></li>
                             <li><a href="#!">Lançamentos</a></li>
-                            <li><a href="#!">Top de Todos os Tempos</a></li>
-                            <li><a href="#!">Em Alta</a></li>
+                            <li><a href="#recomendados">Recomendados</a></li>
+                            <li><a href="#!">Maiores Notas</a></li>
                         </fieldset>
                         <fieldset class="dropdown-jogos">
                             <legend>Temas</legend>
-                            <li><a>Ação</a></li>
+                            <li><a href="#acao">Ação</a></li>
                             <li><a>Aventura</a></li>
                             <li><a>Terror</a></li>
                             <li><a>Estratégia</a></li>
-                            <li><a>RPG</a></li>
+                            <li><a href="#sobrevivencia">Sobrevivência</a></li>
                         </fieldset>
                         <fieldset class="dropdown-jogos">
                             <legend>Fique por Dentro</legend>
@@ -83,16 +83,16 @@
                 <legend>Mundo dos Jogos</legend>
                 <li><a href="#emalta">Em Alta</a></li>
                 <li><a href="#!">Lançamentos</a></li>
-                <li><a href="#!">Top de Todos os Tempos</a></li>
-                <li><a href="#!">Em Alta</a></li>
+                <li><a href="#recomendados">Recomendados</a></li>
+                <li><a href="#!">Maiores Notas</a></li>
             </fieldset>
             <fieldset class="dropdown-jogos">
                 <legend>Temas</legend>
-                <li><a>Ação</a></li>
+                <li><a href="#acao">Ação</a></li>
                 <li><a>Aventura</a></li>
                 <li><a>Terror</a></li>
                 <li><a>Estratégia</a></li>
-                <li><a>RPG</a></li>
+                <li><a href="#sobrevivencia">Sobrevivência</a></li>
             </fieldset>
             <fieldset class="dropdown-jogos">
                 <legend>Fique por Dentro</legend>
@@ -157,8 +157,9 @@
 
     <!-- Catálogo de Jogos -->
     <div id="catalogo">
-        <div class="carrosel-filmes">
-            <h5 id="emalta">Em alta:</h5>
+        <div class="carrosel-filmes" >
+            <span class="anchor" id="emalta"></span>
+            <h5>Em alta:</h5>
             <div class="owl-carousel owl-theme">
                 <div class="item">
                     <a href="jogo.html"></a><img class="box-filme" src="./assets/img/Catalogo/cs2.jpg" alt="jogo cs2"></a>
@@ -173,7 +174,7 @@
                     <a href="jogo.html"> <img class="box-filme" src="./assets/img/Catalogo/starfield.jpg" alt="jogo starfield"></a>
                 </div>
             </div>
-            <br>
+            <span class="anchor" id="recomendados"></span>
             <h5>Recomendados:</h5>
             <div class="owl-carousel owl-theme">
                 <div class="item">
@@ -189,7 +190,7 @@
                     <a href="jogo.html"> <img class="box-filme" src="./assets/img/Catalogo/starfield.jpg" alt="jogo starfield"></a>
                 </div>
             </div>
-            <br>
+            <span class="anchor" id="acao"></span>
             <h5>Ação:</h5>
             <div class="owl-carousel owl-theme">
                 <div class="item">
@@ -205,7 +206,7 @@
                     <a href="jogo.html"> <img class="box-filme" src="./assets/img/Catalogo/starfield.jpg" alt="jogo starfield"></a>
                 </div>
             </div>
-            <br>
+            <span class="anchor" id="sobrevivencia"></span>
             <h5>Sobrevivência:</h5>
             <div class="owl-carousel owl-theme">
                 <div class="item">
