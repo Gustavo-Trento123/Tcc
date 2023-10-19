@@ -38,7 +38,6 @@ a:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    display: flex;
     padding: 0 2%; /* Aumentar o espaço nas margens para centralizar o conteúdo */
 }
 
@@ -149,6 +148,7 @@ a:hover{
 }
 .sidenav{ /* Corpo do menu responsivo */
     background-color:#252525 !important;
+    width: 80% !important;
 }
 .sidenav-overlay{
     display: none !important;
@@ -162,7 +162,7 @@ a:hover{
 #dropdown-pc{ /* Corpo do Dropdown */
     background-color: #252525;
     width:100% !important;
-    height: 430px !important;
+    height: 380px !important;
     left:-0% !important;
     top: 100% !important;
     overflow-y: hidden;
@@ -170,6 +170,11 @@ a:hover{
 
 #dropdown-mobile{ /* Corpo do dropdown responsivo */
     background-color: #252525;
+    flex-direction: column !important;    
+}
+.sidenav li > a{
+    display: flex !important;
+    position:relative !important;
 }
 
 #dropdown-pc ul{ /* Alinhamento das li's do dropdown */
@@ -188,15 +193,6 @@ a:hover{
     margin:0 50px;
 }
 
-#dropdown-temas{
-    position: relative;
-    top:-14.25%;
-}
-
-#dropdown-noticias{
-    position: relative;
-    top:-39%;
-}
 
 .dropdown-content li:hover{
     background-color:transparent !important;
@@ -215,6 +211,9 @@ a:hover{
 @media (max-width: 600px) {
    .carousel img{
     scale: 0.6;
+   }
+   .carousel{
+    height: 300px !important;
    }
 }
 
