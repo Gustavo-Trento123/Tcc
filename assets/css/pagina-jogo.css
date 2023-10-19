@@ -1,0 +1,79 @@
+/* Nav bar secundaria */
+
+#id-bar{ /* Corpo da barra de navegação secundária */
+    background-color: #252525;
+    margin: 0 auto;
+    width: 89%; /* 1212px */
+    height: 47px;
+    position: relative;
+    top: 103px;
+    font-size: 18px;
+    display: flex;
+    border-radius:20px;
+}
+
+#id-bar ul{ /* Configuração do menu secundario */
+    display: inline;
+}
+
+#id-bar li{ /* Configuração do menu secundario */
+    margin: 0 auto;
+    display: inline;
+    line-height: 47px;
+}
+
+/* Conteudo principal */
+#conteudo-pagina-jogo{
+    position: relative;
+    top:130px;
+    background-color: #252525;
+    margin:0 auto;
+    padding: 10px;
+    width: 89%; /* 1212 */
+    height: 2000px;
+}
+
+#trailer{
+    display:inline;
+    margin:0 14px 0 0; 
+}
+
+#trailer iframe{
+    display:inline-block !important;
+    float:left;
+}
+
+#info-jogo{
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    width:42%;/* 493px */
+    height: 25% !important;
+    border:1px solid red;
+}
+
+
+#imagem-jogo{
+    width: 100%;/* 494px */
+    height: auto;
+    
+}
+
+#game-content{
+    height:392.5px;
+}
+
+@media (max-width:922px) {
+    #id-bar li{ /* font para celular */
+        font-size:small;
+    }
+    #info-jogo{
+        display: none !important;
+    }
+    #info-jogo2{
+        display: block !important;
+    }
+    #trailer iframe{
+        width: 100% !important;
+    }
+}
