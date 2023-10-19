@@ -37,13 +37,13 @@
         </ul>
         <div class="usuario right hide-on-med-and-down">
             <img src="assets/img/usuario.png">
-            <p><a class="waves-effect waves-light btn modal-trigger" href="#modal1">ENTRAR</a></p>
+            <p><a class="waves-effect waves-light btn modal-trigger" href="#modal1">CONTA</a></p>
         </div>
         <div class="sidenav" id="mobile-demo">
             <ul>
                 <li><a class="sidenav-close" href="#!"><i class="material-icons" style="color:white; margin: 0 0 0 100%;">close</i></a></li>
-               
-        <li><a class='dropdown-trigger' href='#' data-target='dropdown2'>Jogos</a></li>
+                <li>
+                    <a class='dropdown-trigger' href='#' data-target='dropdown2'>Jogos</a>
                     <ul id='dropdown2' class='dropdown-content-sidnav' style="position: relative;">
                         <fieldset class="dropdown-jogos">
                             <legend>Mundo dos Jogos</legend>
@@ -98,7 +98,7 @@
                 <li><a>The Game Awards</a></li>
             </fieldset>
         </ul>
-	</div>
+    </div>
 
         <script src= 
         "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"> 
@@ -128,11 +128,13 @@
             </div>
 
             <!-- Dropdown Script -->
-            <script>   
-                $(document).ready(function(){
-                $('.modal').modal();
-                $('.dropdown-trigger').dropdown();
-                hover:true
+            <script>
+                $(document).ready(function () {
+                    $('.modal').modal();
+                    $('.dropdown-trigger').dropdown({ 
+                        hover: false,
+                        closeOnClick:false,
+                    });
                 });
             </script>
 
