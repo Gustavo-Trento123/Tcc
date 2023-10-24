@@ -1,6 +1,6 @@
 /* Nav bar secundaria */
 
-#id-bar{ /* Corpo da barra de navegação secundária */
+#id-bar{ /* Corpo da barra de navegaÃ§Ã£o secundÃ¡ria */
     background-color: #252525;
     margin: 0 auto;
     width: 89%; /* 1212px */
@@ -10,56 +10,74 @@
     font-size: 18px;
     display: flex;
     border-radius:20px;
+    z-index: 10;
 }
 
-#id-bar ul{ /* Configuração do menu secundario */
+#id-bar ul{ /* ConfiguraÃ§Ã£o do menu secundario */
     display: inline;
 }
 
-#id-bar li{ /* Configuração do menu secundario */
+#id-bar li{ /* ConfiguraÃ§Ã£o do menu secundario */
     margin: 0 auto;
     display: inline;
     line-height: 47px;
 }
 
 /* Conteudo principal */
-.container{
-    margin: 0 auto;
-    max-width: 1280px;
-    width: 90%;
+.container1{
+    position: relative !important;
+    top: 80px;
+    max-width: 100%;
+    padding: 50px 10px 0px 10px;
+    display: flex;
+    justify-content: space-around;
+    background: white;
 }
 
 .div-video{
-   width: 100%;
-   padding-top: 56.25%; 
-   position: relative;
+    width: 70%;
+    padding-top: 58.25%;
+    position: relative;
+    
 }
 
 .div-video iframe{
-    width: 100%;
+    width: 100%;    
     height: 70%;
     position: absolute;
     top: 0;
     left: 0;
-    border-radius: 10px;
-
+    border-radius: 10px;    
 }
 
-
-#info-jogo{
-    display: inline-block;
-    text-align: center;
-    position: relative;
-    bottom:15px;
-    width:42%;/* 493px */
+.img{
+    width: 400px !important;
+    height: 200px !important;
 }
 
-#imagem-jogo{
-    width: 90%;/* 494px */
-    height: 321px;
-    position: relative;
+.img img{
+    width:100%;
+    height: auto;
+    object-fit: scale-down;
+    padding-left: 10px !important;
+    
 }
 
-#game-content{
-    height:392.5px;
+@media (max-width: 900px) {    
+    .teste{
+        justify-content:left;
+        display: block !important;
+        margin-bottom: 50px;
+    }
+    .teste2{
+        display: none !important;
+    }
+    .container1{
+        display: block;
+    }
+    .div-video{
+        justify-content: center;
+        width: 100% !important;
+        max-height: max-content !important;
+    }
 }
