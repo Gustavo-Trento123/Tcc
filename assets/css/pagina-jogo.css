@@ -31,14 +31,14 @@
     padding: 50px 10px 0px 10px;
     display: flex;
     justify-content: space-around;
-    background: white;
+    background: #000
+    ;
 }
 
 .div-video{
     width: 70%;
     padding-top: 58.25%;
     position: relative;
-    
 }
 
 .div-video iframe{
@@ -63,7 +63,10 @@
     
 }
 
-@media (max-width: 900px) {    
+@media (max-width: 922px) {
+    #id-bar li{ /* font para celular */
+        font-size:small;
+    }    
     .teste{
         justify-content:left;
         display: block !important;
