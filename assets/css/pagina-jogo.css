@@ -27,39 +27,41 @@
 .container1{
     position: relative !important;
     top: 80px;
-    max-width: 100%;
+    max-width: 89%;
     padding: 50px 10px 0px 10px;
     display: flex;
-    justify-content: space-around;
-    background: #000
-    ;
+    justify-content: space-between !important;
+    background: #000;
+    margin: 0 auto;
 }
 
 .div-video{
-    width: 70%;
+    width: 80%;
+    height: 0% !important;
     padding-top: 58.25%;
     position: relative;
 }
 
 .div-video iframe{
     width: 100%;    
-    height: 70%;
-    position: absolute;
+    height: 60%;
+    position:absolute;
     top: 0;
-    left: 0;
-    border-radius: 10px;    
+    margin: 0 auto;
+    border-radius: 10px;
+
 }
 
 .img{
-    width: 400px !important;
-    height: 200px !important;
+    width: 50% !important;
+    height: auto !important;
 }
 
 .img img{
     width:100%;
     height: auto;
     object-fit: scale-down;
-    padding-left: 10px !important;
+    margin-left: 10px !important;
     
 }
 
@@ -83,4 +85,22 @@
         width: 100% !important;
         max-height: max-content !important;
     }
+    .div-video iframe{
+        width: 100%;    
+        height: 100%;
+    }
+
+    #media{
+        width:70px;
+        height:70px;
+        border: 1px solid red;
+    }
 }
+@media (max-width:662px) {
+    .img{
+        width: 100% !important;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
