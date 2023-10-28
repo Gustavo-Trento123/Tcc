@@ -17,9 +17,8 @@
 }
 
 #id-bar li{ /* ConfiguraÃ§Ã£o do menu secundario */
-    margin: 0 auto;
+    margin: auto;
     display: inline;
-    line-height: 47px;
 }
 
 /* Conteudo principal */
@@ -130,5 +129,8 @@
     .div-video iframe{
         width: 100%;    
         height: 100%;
+    }
+    #id-bar{ /* Corpo da barra de navegaÃ§Ã£o secundÃ¡ria */
+        height: 30px;
     }
 }
