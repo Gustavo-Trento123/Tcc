@@ -71,6 +71,26 @@
     height: auto;
 }
 
+div::-webkit-scrollbar-track{ /* Altera a scrollbar da div */
+	/*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+	border-radius:0;
+	background-color: #ffffff;
+}
+
+div::-webkit-scrollbar{
+	width: 6px;
+	background-color: #ffffff;
+}
+
+div::-webkit-scrollbar-thumb{
+	border-radius:0;
+	-webkit-box-shadow: inset 0 0 6px rgba(177, 79, 79, 0.3);
+	background-color: #242424;
+    border-radius: 5px;
+}
+
+#medias img 
+
 .img{
     width: 100% !important;
     height: auto !important;
