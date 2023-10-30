@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,15 @@
     <link rel="stylesheet" href="assets/css/pagina-jogo.css">
     <!-- Carrossel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-   
+
     <!-- Catálogo de Jogos -->
     <link rel="stylesheet" href="./assets/css/Owl/owl.carousel.min.css">
     <!-- Opcional theme.defaul não sei o que faz -->
     <link rel="stylesheet" href="./assets/css/Owl/owl.theme.default.min.css">
 
     <!-- jquery -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"> 
-	</script> 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js">
+    </script>
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,6 +27,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>The Real Score - Starfield</title>
 </head>
+
 <body>
     <div id="navegacao" class="nav-extended nav-wrapper">
         <a href="index.html"><img src="./assets/img/logo2.png" class="logo brand-logo"></a>
@@ -104,11 +106,10 @@
 
         </ul>
 
-        <script src= 
-        "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"> 
-            </script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+        </script>
         <script>
-            $(document).ready(function(){
+            $(document).ready(function () {
                 $('.sidenav').sidenav();
             });
 
@@ -119,8 +120,9 @@
         <!-- Modal Login -->
         <div id="modal1" class="modal">
             <div class="modal-content center-align">
-                <div id="titulo">    
-                    <img class="logo-modal" src="assets/img/logo.png"><h4>The Real Score</h4>
+                <div id="titulo">
+                    <img class="logo-modal" src="assets/img/logo.png">
+                    <h4>The Real Score</h4>
                 </div>
                 <div id="logins">
                     <img src="assets/img/logins.png">
@@ -132,11 +134,11 @@
             </div>
 
             <!-- Dropdown Script -->
-            <script>   
-                $(document).ready(function(){
-                $('.modal').modal();
-                $('.dropdown-trigger').dropdown();
-                hover:false
+            <script>
+                $(document).ready(function () {
+                    $('.modal').modal();
+                    $('.dropdown-trigger').dropdown();
+                    hover: false
                 });
             </script>
 
@@ -150,15 +152,38 @@
     </div>
 
     <!-- Trailer do jogo -->
-    <div id="conteudo-pagina-jogo">
-        <div id="trailer">
-            <iframe width="55.8%"  height="382.5" src="https://www.youtube.com/embed/Ek3I6_9c58E?si=QH4OQ2EbD72XksgV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><!--680px por 383px-->
-        </div>
+    <div class="container1">
+        <div class="info-jogo-mobile teste" style="display: none;">
+            <div class="img"">
+                <img src=" assets/img/carrosel/carrosel3.jpg ">
+            </div>
+            <p class=" nome">Starfield</p>
+            </div>
+            <div class="display-jogo">
+                <div class="div-video">
+                    <iframe src="https://www.youtube.com/embed/Ek3I6_9c58E?si=QH4OQ2EbD72XksgV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                    encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                </div>
+                <div id="medias">
+                    <img src="assets/img/pagina-jogo/starfield-logo.jpeg" alt="">
+                    <img src="assets/img/pagina-jogo/starfield-1.png" alt="">
+                    <img src="assets/img/pagina-jogo/starfield-2.jpg" alt="">
+                    <img src="assets/img/pagina-jogo/starfield-3.png" alt="">
+                    <img src="assets/img/pagina-jogo/starfield-4.jpg" alt="">
+                    <img src="assets/img/pagina-jogo/starfield-5.png" alt="">
+                    <img src="assets/img/pagina-jogo/starfield-6.png" alt="">
+                </div>
+            </div>
 
-        <div id="info-jogo">
-            <img src="assets/img/carrosel/carrosel3.jpg " id="imagem-jogo">
-            <h5>Starfield</h5>
+            
+            <div class="info-jogo teste2">
+                <div class="img ">
+                    <img src="assets/img/carrosel/carrosel3.jpg ">
+                </div>
+                <p class="nome">Starfield</p>
+            </div>
         </div>
-    </div>
 </body>
+
 </html>
