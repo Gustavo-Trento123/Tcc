@@ -66,13 +66,9 @@
     white-space: nowrap;
 }
 
-#medias img, iframe{
+#medias img{
     width:200px;
     height: auto;
-}
-
-#medias img:onclick{
-    height: 500px;
 }
 
 div::-webkit-scrollbar-track{ /* Altera a scrollbar da div */
