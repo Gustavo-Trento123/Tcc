@@ -1,0 +1,40 @@
+#id-bar{ /* Corpo da barra de navegação secundária */
+    background-color: #252525;
+    margin: 0 auto;
+    width: 89%; /* 1212px */
+    height: 47px;
+    position: relative;
+    top: 103px;
+    font-size: 18px;
+    display: flex;
+    border-radius:20px;
+}
+
+#id-bar ul{ /* Configuração do menu secundario */
+    display: inline;
+}
+
+#id-bar li{ /* Configuração do menu secundario */
+    margin: 0 auto;
+    display: inline;
+    line-height: 47px;
+    /* text-align:left; */
+    /* margin-left: auto; */
+}
+
+#container{
+    margin-left: 50px;
+    margin-top: 122px;
+    width: 89%;
+    height: auto;
+    display: flex;
+}
+
+.jogo{
+    display: flex;
+    flex-direction: row;
+}
+
+.info{
+    max-width: fit-content;
+}
