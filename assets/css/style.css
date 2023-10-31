@@ -154,6 +154,7 @@ a:hover{
     height: 430px !important;
     left:-0% !important;
     top: 100% !important;
+    overflow-y: hidden;
 }
 
 #dropdown2{ /* Corpo do dropdown responsivo */
