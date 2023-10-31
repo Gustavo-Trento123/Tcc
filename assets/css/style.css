@@ -246,10 +246,12 @@ a:hover{
 
 /* Rodapé */
 #rodape {
+    top: 100px;
+    position: relative;
     background-color: #252525;
     color: whitesmoke;
     text-align: center;
-    padding: 20px 0;
+    
 }
 
 #rodape p{

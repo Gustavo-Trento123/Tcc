@@ -8,6 +8,7 @@
     font-size: 18px;
     display: flex;
     border-radius:20px;
+    z-index: 1;
 }
 
 #id-bar ul{ /* Configuração do menu secundario */
@@ -31,7 +32,6 @@
     justify-content: space-between !important;
     background: #000;
     margin: 0 auto;
-    z-index: -1;
     flex-direction: column;
 }
 .jogo{
@@ -70,3 +70,6 @@
     }
 }
 
+.pagination{
+    margin: 0 auto !important;
+}
