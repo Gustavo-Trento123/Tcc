@@ -119,7 +119,6 @@ div::-webkit-scrollbar-thumb{
 .nome{
     display: flex;
     justify-content: center;
-    font-size: larger;
 }
 
 
