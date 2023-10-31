@@ -36,7 +36,7 @@
     padding: 50px 10px 0px 10px;
     display: flex;
     justify-content: space-between !important;
-    background: #000;
+    background: #242424;
     margin: 0 auto;
 }
 
@@ -151,7 +151,13 @@ div::-webkit-scrollbar-thumb{
     .img img{
         margin-left: 0px !important;
     }
+
 }
+
+.legenda{
+    text-align: center;
+}
+
 @media (max-width:662px) {
     .img{
         width: 100% !important;
