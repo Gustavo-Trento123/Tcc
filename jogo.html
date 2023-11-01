@@ -6,34 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="assets/css/pagina-jogo.css">
-    <!-- Carrossel -->
+    <!-- Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!-- Catálogo de Jogos -->
-    <link rel="stylesheet" href="./assets/css/Owl/owl.carousel.min.css">
-    <!-- Opcional theme.defaul não sei o que faz -->
-    <link rel="stylesheet" href="./assets/css/Owl/owl.theme.default.min.css">
-
+    <!-- icones Materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- jquery -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js">
     </script>
-
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-
-    <!-- icones materialize -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- scripts gerais e funçoes materialize -->
+    <script src="assets/script/script.js"></script>
     <title>The Real Score - Starfield</title>
 </head>
-
 <body>
     <div id="navegacao" class="nav-extended nav-wrapper">
         <a href="index.html"><img src="./assets/img/logo2.png" class="logo brand-logo"></a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-medium-and-down"><i class="material-icons ">menu</i></a>
         <ul id="nav-mobile" class="menu right hide-on-med-and-down">
-            <li><a class='dropdown-trigger' href='#' data-target='dropdown1'>Jogos &nbsp<i class="arrow down"></i></a></li>
+            <li><a class='dropdown-trigger' href='#' data-target='dropdown-pc'>Jogos &nbsp<i class="arrow down"></i></a></li>
             <li><a href="#">Críticos</a></li>
             <li><a href="noticia.html">Notícias</a></li>
         </ul>
@@ -44,7 +37,7 @@
         <div class="sidenav" id="mobile-demo">
             <ul>
                 <li><a class="sidenav-close" href="#!"><i class="material-icons" style="color:white; margin: 0 0 0 100%;">close</i></a></li>
-                <li><a class='dropdown-trigger' href='#' data-target='dropdown2'>Jogos</a></li>
+                <li><a class='dropdown-trigger' href='#' data-target='dropdown-mobile'>Jogos</a></li>
                 <li><a href="#">Críticos</a></li>
                 <li><a href="noticia.html">Notícias</a></li>
             </ul>
@@ -54,7 +47,7 @@
                 <p><a class="waves-effect waves-light btn modal-trigger" href="#modal1">ENTRAR</a></p>
             </div>
         </div>
-        <ul id='dropdown1' class='dropdown-content'>
+        <ul id='dropdown-pc' class='dropdown-content'>
             <fieldset id="dropdown-jogos">
                 <legend>Mundo dos Jogos</legend>
                 <li><a href="#!">Em Alta</a></li>
@@ -62,7 +55,6 @@
                 <li><a href="#!">Top de Todos os Tempos</a></li>
                 <li><a href="#!">Em Alta</a></li>
             </fieldset>
-
             <fieldset id="dropdown-temas">
                 <legend>Temas</legend>
                 <li><a>Ação</a></li>
@@ -71,16 +63,13 @@
                 <li><a>Estratégia</a></li>
                 <li><a>RPG</a></li>
             </fieldset>
-
             <fieldset id="dropdown-noticias">
                 <legend>Fique por Dentro</legend>
                 <li><a>Novidades</a></li>
                 <li><a>The Game Awards</a></li>
             </fieldset>
-
         </ul>
-
-        <ul id='dropdown2' class='dropdown-content'>
+        <ul id='dropdown-mobile' class='dropdown-content'>
             <fieldset id="dropdown-jogos">
                 <legend>Mundo dos Jogos</legend>
                 <li><a href="#!">Em Alta</a></li>
@@ -88,7 +77,6 @@
                 <li><a href="#!">Top de Todos os Tempos</a></li>
                 <li><a href="#!">Em Alta</a></li>
             </fieldset>
-
             <fieldset id="dropdown-temas">
                 <legend>Temas</legend>
                 <li><a>Ação</a></li>
@@ -97,61 +85,21 @@
                 <li><a>Estratégia</a></li>
                 <li><a>RPG</a></li>
             </fieldset>
-
             <fieldset id="dropdown-noticias">
                 <legend>Fique por Dentro</legend>
                 <li><a>Novidades</a></li>
                 <li><a>The Game Awards</a></li>
             </fieldset>
-
         </ul>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
-        </script>
-        <script>
-            $(document).ready(function () {
-                $('.sidenav').sidenav();
-            });
-
-        </script>
-        <script src="./assets/script/Owl/owl.carousel.min.js"></script>
-        <script src="./assets/script/Owl/main.js"></script>
-
-        <!-- Modal Login -->
-        <div id="modal1" class="modal">
-            <div class="modal-content center-align">
-                <div id="titulo">
-                    <img class="logo-modal" src="assets/img/logo.png">
-                    <h4>The Real Score</h4>
-                </div>
-                <div id="logins">
-                    <img src="assets/img/logins.png">
-                    <br>OU<br>
-                    <input class="boxes" type="text" placeholder="E-MAIL OU TELEFONE" name="usuario">
-                    <input class="boxes" type="password" placeholder="SENHA" name="senha"><br>
-                    <input class="submit" type="submit" Value="ENVIAR">
-                </div>
-            </div>
-
-            <!-- Dropdown Script -->
-            <script>
-                $(document).ready(function () {
-                    $('.modal').modal();
-                    $('.dropdown-trigger').dropdown();
-                    hover: false
-                });
-            </script>
-
-        </div>
     </div>
 
+    <!-- barra de navegação jogos -->
     <div id="id-bar">
         <li><a href=""></a>JOGO</li>
         <li><a href=""></a>COMPARADOR DE PREÇOS</li>
         <li><a href=""></a>AVALIAÇÕES</li>
     </div>
 
-    <!-- Trailer do jogo -->
     <div class="container1">
         <div class="info-jogo-mobile teste" style="display: none;">
             <div class="img"">
@@ -175,8 +123,6 @@
                     <img src="assets/img/pagina-jogo/starfield-6.png" alt="">
                 </div>
             </div>
-
-            
             <div class="info-jogo teste2">
                 <div class="img ">
                     <img src="assets/img/carrosel/carrosel3.jpg ">
@@ -184,6 +130,45 @@
                 <p class="nome">Starfield</p>
             </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+    </div>  
+
+    <div id="rodape">
+        <ul>
+            <li>Trabalhe conosco</li>
+            <li>Termos de uso</li>
+            <li>Contato</li>
+            <li>Sobre nós</li>
+        </ul>
+        <p>© 2023 The Real Score Todos os direitos reservados.</p>
+    </div>
+    
+    <!-- Modal Login -->
+    <div id="modal1" class="modal">
+        <div class="modal-content center-align">
+            <div id="titulo">
+                <img class="logo-modal" src="assets/img/logo.png">
+                <h4>The Real Score</h4>
+            </div>
+            <div id="logins">
+                <img src="assets/img/logins.png">
+                <br>OU<br>
+                <input class="boxes" type="text" placeholder="E-MAIL OU TELEFONE" name="usuario">
+                <input class="boxes" type="password" placeholder="SENHA" name="senha"><br>
+                <input class="submit" type="submit" Value="ENVIAR">
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

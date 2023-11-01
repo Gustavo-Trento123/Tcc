@@ -147,8 +147,12 @@ a:hover{
     display: none !important;
 }
 
+.drag-target{
+    display: none !important;
+}
+
 /* Dropdown */
-#dropdown1{ /* Corpo do Dropdown */
+#dropdown-pc{ /* Corpo do Dropdown */
     background-color: #252525;
     width:100% !important;
     height: 430px !important;
@@ -157,15 +161,15 @@ a:hover{
     overflow-y: hidden;
 }
 
-#dropdown2{ /* Corpo do dropdown responsivo */
+#dropdown-mobile{ /* Corpo do dropdown responsivo */
     background-color: #252525;
 }
 
-#dropdown1 ul{ /* Alinhamento das li's do dropdown */
+#dropdown-pc ul{ /* Alinhamento das li's do dropdown */
     display: inline !important;
 }
 
-#dropdown1 ul{ /* Alinhamento do texto da dropdown */
+#dropdown-pc ul{ /* Alinhamento do texto da dropdown */
     text-align: center;
 }
 
@@ -195,7 +199,7 @@ a:hover{
 /* Carrossel */
 .carousel {
     max-width: 100% !important;
-    top: 20px;
+    margin-top: 70px;
 }
 
 .carousel img {
@@ -243,6 +247,11 @@ a:hover{
 .box-filme {
     max-width: 100%;
     height: auto;
+}
+
+.nome-jogo{
+    text-align: center;
+    font-size:large;
 }
 
 /* Rodapé */

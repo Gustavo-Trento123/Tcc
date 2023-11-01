@@ -6,36 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="assets/css/pagina-jogo.css">
-    
-    <!-- Carrossel -->
+    <!-- Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-   
+    <!-- icones materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Catálogo de Jogos -->
     <link rel="stylesheet" href="./assets/css/Owl/owl.carousel.min.css">
     <!-- Opcional theme.defaul não sei o que faz -->
     <link rel="stylesheet" href="./assets/css/Owl/owl.theme.default.min.css">
-
     <!-- jquery -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"> 
-	</script> 
-
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js">
+    </script>
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-
-    <!-- icones materialize -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>The Real Score</title>
     
+    <!-- scripts gerais e funçoes materialize -->
+    <script src="assets/script/script.js"></script>
+    <title>The Real Score</title>
 </head>
-
 <body>
     <div id="navegacao" class="nav-extended nav-wrapper">
         <a href="index.html"><img src="./assets/img/logo2.png" class="logo brand-logo"></a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-medium-and-down"><i class="material-icons ">menu</i></a>
         <ul id="nav-mobile" class="menu right hide-on-med-and-down">
-            <li><a class='dropdown-trigger' href='#' data-target='dropdown1'>Jogos &nbsp<i class="arrow down"></i></a></li>
+            <li><a class='dropdown-trigger' href='#' data-target='dropdown-pc'>Jogos &nbsp<i class="arrow down"></i></a></li>
             <li><a href="#">Críticos</a></li>
             <li><a href="noticia.html">Notícias</a></li>
         </ul>
@@ -46,7 +42,7 @@
         <div class="sidenav" id="mobile-demo">
             <ul>
                 <li><a class="sidenav-close" href="#!"><i class="material-icons" style="color:white; margin: 0 0 0 100%;">close</i></a></li>
-                <li><a class='dropdown-trigger' href='#' data-target='dropdown2'>Jogos</a></li>
+                <li><a class='dropdown-trigger' href='#' data-target='dropdown-mobile'>Jogos</a></li>
                 <li><a href="#">Críticos</a></li>
                 <li><a href="noticia.html">Notícias</a></li>
             </ul>
@@ -56,7 +52,7 @@
                 <p><a class="waves-effect waves-light btn modal-trigger" href="#modal1">ENTRAR</a></p>
             </div>
         </div>
-        <ul id='dropdown1' class='dropdown-content'>
+        <ul id='dropdown-pc' class='dropdown-content'>
             <fieldset id="dropdown-jogos">
                 <legend>Mundo dos Jogos</legend>
                 <li><a href="#!">Em Alta</a></li>
@@ -64,7 +60,6 @@
                 <li><a href="#!">Top de Todos os Tempos</a></li>
                 <li><a href="#!">Em Alta</a></li>
             </fieldset>
-
             <fieldset id="dropdown-temas">
                 <legend>Temas</legend>
                 <li><a>Ação</a></li>
@@ -73,16 +68,13 @@
                 <li><a>Estratégia</a></li>
                 <li><a>RPG</a></li>
             </fieldset>
-
             <fieldset id="dropdown-noticias">
                 <legend>Fique por Dentro</legend>
                 <li><a>Novidades</a></li>
                 <li><a>The Game Awards</a></li>
             </fieldset>
-
         </ul>
-
-        <ul id='dropdown2' class='dropdown-content'>
+        <ul id='dropdown-mobile' class='dropdown-content'>
             <fieldset id="dropdown-jogos">
                 <legend>Mundo dos Jogos</legend>
                 <li><a href="#!">Em Alta</a></li>
@@ -90,7 +82,6 @@
                 <li><a href="#!">Top de Todos os Tempos</a></li>
                 <li><a href="#!">Em Alta</a></li>
             </fieldset>
-
             <fieldset id="dropdown-temas">
                 <legend>Temas</legend>
                 <li><a>Ação</a></li>
@@ -99,20 +90,16 @@
                 <li><a>Estratégia</a></li>
                 <li><a>RPG</a></li>
             </fieldset>
-
             <fieldset id="dropdown-noticias">
                 <legend>Fique por Dentro</legend>
                 <li><a>Novidades</a></li>
                 <li><a>The Game Awards</a></li>
             </fieldset>
-
         </ul>
     </div>
 
     <!-- Carrossel principal -->
-    
     <div id="conteudo">
-        <br><br>
         <div class="carousel">
             <div href="#one" class="carousel-item">
                 <img src="assets/img/carrosel/carrosel1.jpg" alt="Jogo baldur's Gate" class="img-carossel">
@@ -127,116 +114,102 @@
                 <img src="assets/img/carrosel/carrosel4.jpg" alt="jogo Cs 2" class="img-carossel">
             </div>
         </div>
-      
-        <script type="text/javascript">
-            $(document).ready(function () {
-                var carousel = $('.carousel');
-
-                carousel.carousel({
-                    duration: 300,
-                    indicators: true,
-                });
-                var intervalo = 5000;
-
-                var autoplayInterval = setInterval(autoplay, intervalo);
-
-                function autoplay() {
-                    carousel.carousel('next');
-                }
-
-                // Corrigir problema ao segurar o carrossel pc e celular
-                carousel.on('mousedown touchstart', function () {
-                    clearInterval(autoplayInterval);
-                });
-
-                carousel.on('mouseupm touchend', function () {
-                    autoplayInterval = setInterval(autoplay, intervalo);
-                });   
-            });
-        </script>
-        <script src= 
-        "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"> 
-            </script> 
-        <script>
-            $(document).ready(function(){
-                $('.sidenav').sidenav();
-            });
-
-        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     </div>
 
     <!-- Catálogo de Jogos -->
-    <div id="catalogo">
-        <div class="carrosel-filmes">
+    <div id="catalogo" class="carrosel-filmes">
+        <div>
             <h5>Em alta:</h5>
             <div class="owl-carousel owl-theme">
                 <div class="item">
                     <img class="box-filme" src="./assets/img/Catalogo/cs2.jpg" alt="jogo cs2">
-                    <p class="legenda">Cs 2</p>
+                    <p class="nome-jogo">Counter-Strike 2</p>
                 </div>
                 <div class="item">
                     <img class="box-filme" src="./assets/img/Catalogo/baldersgate.jpg" alt="jogo balder's gate">
+                    <p class="nome-jogo">Balder's Gate</p>
                 </div>
                 <div class="item">
                     <img class="box-filme" src="./assets/img/Catalogo/orithewillofwisps.jpg" alt="jogo ori the will of wisps">
+                    <p class="nome-jogo">ORI and the will of wisps</p>
                 </div>
                 <div class="item">
                     <img class="box-filme" src="./assets/img/Catalogo/starfield.jpg" alt="jogo starfield">
+                    <p class="nome-jogo">Starfield</p>
                 </div>
             </div>
-            <br>
+        </div>
+    
+        <div>
             <h5>Recomendados:</h5>
             <div class="owl-carousel owl-theme">
                 <div class="item">
+                    <img class="box-filme" src="./assets/img/Catalogo/starfield.jpg" alt="jogo starfield">
+                    <p class="nome-jogo">Starfield</p>
+                </div>
+                <div class="item">
                     <img class="box-filme" src="./assets/img/Catalogo/cs2.jpg" alt="jogo cs2">
+                    <p class="nome-jogo">Counter-Strike 2</p>
                 </div>
                 <div class="item">
                     <img class="box-filme" src="./assets/img/Catalogo/baldersgate.jpg" alt="jogo balder's gate">
+                    <p class="nome-jogo">Balder's Gate</p>
                 </div>
                 <div class="item">
                     <img class="box-filme" src="./assets/img/Catalogo/orithewillofwisps.jpg" alt="jogo ori the will of wisps">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="./assets/img/Catalogo/starfield.jpg" alt="jogo starfield">
+                    <p class="nome-jogo">ORI and the will of wisps</p>
                 </div>
             </div>
-            <br>
+        </div>
+
+        <div>
             <h5>Ação:</h5>
             <div class="owl-carousel owl-theme">
                 <div class="item">
-                    <img class="box-filme" src="./assets/img/Catalogo/cs2.jpg" alt="jogo cs2">
-                </div>
-                <div class="item">
-                    <img class="box-filme" src="./assets/img/Catalogo/baldersgate.jpg" alt="jogo balder's gate">
-                </div>
-                <div class="item">
                     <img class="box-filme" src="./assets/img/Catalogo/orithewillofwisps.jpg" alt="jogo ori the will of wisps">
+                    <p class="nome-jogo">ORI and the will of wisps</p>
                 </div>
                 <div class="item">
                     <img class="box-filme" src="./assets/img/Catalogo/starfield.jpg" alt="jogo starfield">
+                    <p class="nome-jogo">Starfield</p>
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./assets/img/Catalogo/cs2.jpg" alt="jogo cs2">
+                    <p class="nome-jogo">Counter-Strike 2</p>
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./assets/img/Catalogo/baldersgate.jpg" alt="jogo balder's gate">
+                    <p class="nome-jogo">Balder's Gate</p>
                 </div>
             </div>
-            <br>
+        </div>
+
+        <div>
             <h5>Sobrevivência:</h5>
             <div class="owl-carousel owl-theme">
                 <div class="item">
-                    <img class="box-filme" src="./assets/img/Catalogo/cs2.jpg" alt="jogo cs2">
-                </div>
-                <div class="item">
                     <img class="box-filme" src="./assets/img/Catalogo/baldersgate.jpg" alt="jogo balder's gate">
+                    <p class="nome-jogo">Balder's Gate</p>
                 </div>
                 <div class="item">
                     <img class="box-filme" src="./assets/img/Catalogo/orithewillofwisps.jpg" alt="jogo ori the will of wisps">
+                    <p class="nome-jogo">ORI and the will of wisps</p>
                 </div>
                 <div class="item">
                     <img class="box-filme" src="./assets/img/Catalogo/starfield.jpg" alt="jogo starfield">
+                    <p class="nome-jogo">Starfield</p>
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="./assets/img/Catalogo/cs2.jpg" alt="jogo cs2">
+                    <p class="nome-jogo">Counter-Strike 2</p>
                 </div>
             </div>
         </div>
         <script src="./assets/script/Owl/owl.carousel.min.js"></script>
         <script src="./assets/script/Owl/main.js"></script>
-        <br><br> 
     </div>
+    
 
     <div id="rodape">
         <ul>
@@ -245,14 +218,15 @@
             <li>Contato</li>
             <li>Sobre nós</li>
         </ul>
-        <p>© 2023 The Real Score  Todos os direitos reservados.</p>
+        <p>© 2023 The Real Score Todos os direitos reservados.</p>
     </div>
 
     <!-- Modal Login -->
     <div id="modal1" class="modal">
         <div class="modal-content center-align">
-            <div id="titulo">    
-                <img class="logo-modal" src="assets/img/logo.png"><h4>The Real Score</h4>
+            <div id="titulo">
+                <img class="logo-modal" src="assets/img/logo.png">
+                <h4>The Real Score</h4>
             </div>
             <div id="logins">
                 <img src="assets/img/logins.png">
@@ -262,17 +236,7 @@
                 <input class="submit" type="submit" Value="ENVIAR">
             </div>
         </div>
-
-        <!-- Dropdown Script -->
-        <script>   
-            $(document).ready(function(){
-              $('.modal').modal();
-              $('.dropdown-trigger').dropdown();
-              hover:false
-            });
-        </script>
-
     </div>
-
 </body>
+
 </html>

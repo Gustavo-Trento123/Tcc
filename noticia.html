@@ -5,25 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="assets/css/noticia.css">
-    <!-- Carrossel -->
+    <!-- Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-   
-    <!-- Catálogo de Jogos -->
-    <link rel="stylesheet" href="./assets/css/Owl/owl.carousel.min.css">
-    <!-- Opcional theme.defaul não sei o que faz -->
-    <link rel="stylesheet" href="./assets/css/Owl/owl.theme.default.min.css">
-
-    <!-- jquery -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"> 
-	</script> 
-
+    <!-- icones materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-
-    <!-- icones materialize -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- scripts gerais e funçoes materialize -->
+    <script src="assets/script/script.js"></script>
     <title>The Real Score - Starfield</title>
 </head>
 <body>
@@ -31,9 +22,9 @@
         <a href="index.html"><img src="./assets/img/logo2.png" class="logo brand-logo"></a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-medium-and-down"><i class="material-icons ">menu</i></a>
         <ul id="nav-mobile" class="menu right hide-on-med-and-down">
-            <li><a class='dropdown-trigger' href='#' data-target='dropdown1'>Jogos &nbsp<i class="arrow down"></i></a></li>
+            <li><a class='dropdown-trigger' href='#' data-target='dropdown-pc'>Jogos &nbsp<i class="arrow down"></i></a></li>
             <li><a href="#">Críticos</a></li>
-            <li><a href="#">Notícias</a></li>
+            <li><a href="noticia.html">Notícias</a></li>
         </ul>
         <div class="usuario right hide-on-med-and-down">
             <img src="assets/img/usuario.png">
@@ -42,9 +33,9 @@
         <div class="sidenav" id="mobile-demo">
             <ul>
                 <li><a class="sidenav-close" href="#!"><i class="material-icons" style="color:white; margin: 0 0 0 100%;">close</i></a></li>
-                <li><a class='dropdown-trigger' href='#' data-target='dropdown2'>Jogos</a></li>
+                <li><a class='dropdown-trigger' href='#' data-target='dropdown-mobile'>Jogos</a></li>
                 <li><a href="#">Críticos</a></li>
-                <li><a href="#">Notícias</a></li>
+                <li><a href="noticia.html">Notícias</a></li>
             </ul>
             <br><br>
             <div class="usuario">
@@ -52,7 +43,7 @@
                 <p><a class="waves-effect waves-light btn modal-trigger" href="#modal1">ENTRAR</a></p>
             </div>
         </div>
-        <ul id='dropdown1' class='dropdown-content'>
+        <ul id='dropdown-pc' class='dropdown-content'>
             <fieldset id="dropdown-jogos">
                 <legend>Mundo dos Jogos</legend>
                 <li><a href="#!">Em Alta</a></li>
@@ -60,7 +51,6 @@
                 <li><a href="#!">Top de Todos os Tempos</a></li>
                 <li><a href="#!">Em Alta</a></li>
             </fieldset>
-
             <fieldset id="dropdown-temas">
                 <legend>Temas</legend>
                 <li><a>Ação</a></li>
@@ -69,16 +59,13 @@
                 <li><a>Estratégia</a></li>
                 <li><a>RPG</a></li>
             </fieldset>
-
             <fieldset id="dropdown-noticias">
                 <legend>Fique por Dentro</legend>
                 <li><a>Novidades</a></li>
                 <li><a>The Game Awards</a></li>
             </fieldset>
-
         </ul>
-
-        <ul id='dropdown2' class='dropdown-content'>
+        <ul id='dropdown-mobile' class='dropdown-content'>
             <fieldset id="dropdown-jogos">
                 <legend>Mundo dos Jogos</legend>
                 <li><a href="#!">Em Alta</a></li>
@@ -86,7 +73,6 @@
                 <li><a href="#!">Top de Todos os Tempos</a></li>
                 <li><a href="#!">Em Alta</a></li>
             </fieldset>
-
             <fieldset id="dropdown-temas">
                 <legend>Temas</legend>
                 <li><a>Ação</a></li>
@@ -95,63 +81,24 @@
                 <li><a>Estratégia</a></li>
                 <li><a>RPG</a></li>
             </fieldset>
-
             <fieldset id="dropdown-noticias">
                 <legend>Fique por Dentro</legend>
                 <li><a>Novidades</a></li>
                 <li><a>The Game Awards</a></li>
             </fieldset>
-
         </ul>
-
-        <script src= 
-        "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"> 
-            </script> 
-        <script>
-            $(document).ready(function(){
-                $('.sidenav').sidenav();
-            });
-
-        </script>
-        <script src="./assets/script/Owl/owl.carousel.min.js"></script>
-        <script src="./assets/script/Owl/main.js"></script>
-
-        <!-- Modal Login -->
-        <div id="modal1" class="modal">
-            <div class="modal-content center-align">
-                <div id="titulo">    
-                    <img class="logo-modal" src="assets/img/logo.png"><h4>The Real Score</h4>
-                </div>
-                <div id="logins">
-                    <img src="assets/img/logins.png">
-                    <br>OU<br>
-                    <input class="boxes" type="text" placeholder="E-MAIL OU TELEFONE" name="usuario">
-                    <input class="boxes" type="password" placeholder="SENHA" name="senha"><br>
-                    <input class="submit" type="submit" Value="ENVIAR">
-                </div>
-            </div>
-
-            <!-- Dropdown Script -->
-            <script>   
-                $(document).ready(function(){
-                $('.modal').modal();
-                $('.dropdown-trigger').dropdown();
-                hover:false
-                });
-            </script>
-
-        </div>
     </div>
 
     <div id="id-bar">
         <li><a href=""></a>Novidades</li>
     </div>
 
-    <div class="container1">
+    <div class="container-noticia">
         <div class="jogo">
             <div style="width:100%;">
                 <div style="float: left;width:15%;" class="float-responsivo">
                     <a href="jogo.html"><img class='my-image jogo-noticia' src="assets/img/Catalogo/starfield.jpg"></a>
+                    <p class="nome">Starfield</p>
                 </div>
                 <div style="float:none;" class="info"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti labore eius hic harum illum illo dicta ipsa nemo, dolor at inventore assumenda! Accusamus id pariatur cupiditate perspiciatis itaque labore, numquam quidem corporis ipsam a laudantium at eveniet sunt natus officiis unde, ea ullam vel repellat, dignissimos quibusdam neque! Obcaecati ratione eligendi officiis dolorum voluptas earum, alias sit eaque quaerat temporibus delectus. Quo consectetur quia dolorem nam voluptate, voluptas, voluptatibus repellendus delectus recusandae beatae impedit, unde fuga. Quo amet praesentium, maxime ut sed a rerum. Nostrum consequatur aliquid ipsum officia nam neque modi sunt. Adipisci, incidunt distinctio sunt ad nostrum quis?</div>
             </div>
@@ -200,7 +147,24 @@
             <li>Sobre nós</li>
         </ul>
         <p>© 2023 The Real Score  Todos os direitos reservados.</p>
-    </div>     
-</body>
+    </div>
 
+     <!-- Modal Login -->
+     <div id="modal1" class="modal">
+        <div class="modal-content center-align">
+            <div id="titulo">
+                <img class="logo-modal" src="assets/img/logo.png">
+                <h4>The Real Score</h4>
+            </div>
+            <div id="logins">
+                <img src="assets/img/logins.png">
+                <br>OU<br>
+                <input class="boxes" type="text" placeholder="E-MAIL OU TELEFONE" name="usuario">
+                <input class="boxes" type="password" placeholder="SENHA" name="senha"><br>
+                <input class="submit" type="submit" Value="ENVIAR">
+            </div>
+        </div>
+    </div>
+    
+</body>
 </html>
