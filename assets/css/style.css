@@ -19,6 +19,13 @@ a:hover{
     color: white !important;
 }
 
+.anchor{
+    display: block;
+    height: 60px; /*same height as header*/
+    margin-top: -60px; /*same height as header*/
+    visibility: hidden;
+  }
+
 /* Navegação */
 #navegacao { /* O corpo da barra de navegação */
     position: fixed;
@@ -67,7 +74,7 @@ a:hover{
 #navegacao .menu li { /* Configuração do menu */
     margin: 0 20px;
     line-height: 60px;
-    width: 100px !important;
+    width: 100px;
 }
 
 #navegacao .menu a { /* Configuração dos links no menu da navbar */
@@ -179,7 +186,6 @@ a:hover{
     display: inline;
     position: relative;
     margin:0 50px;
-    /* border: 0px; */
 }
 
 #dropdown-temas{
