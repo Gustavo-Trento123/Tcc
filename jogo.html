@@ -20,7 +20,9 @@
     <!-- scripts gerais e funções materialize -->
     <script src="assets/script/script.js"></script>
     <title>The Real Score - Starfield</title>
+
 </head>
+
 <body>
     <div id="navegacao" class="nav-extended nav-wrapper">
         <a href="index.html"><img src="./assets/img/logo2.png" class="logo brand-logo"></a>
@@ -108,19 +110,63 @@
             <p class=" nome">Starfield</p>
             </div>
             <div class="display-jogo">
-                <div class="div-video">
-                    <iframe src="https://www.youtube.com/embed/Ek3I6_9c58E?si=QH4OQ2EbD72XksgV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-                    encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-                    </iframe>
+                <div class="div-video" id="div-video">
+                    <iframe src="https://www.youtube.com/embed/Ek3I6_9c58E?si=QH4OQ2EbD72XksgV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
-                <div id="medias">
-                    <img src="assets/img/pagina-jogo/starfield-logo.jpeg" alt="">
-                    <img src="assets/img/pagina-jogo/starfield-1.png" alt="">
-                    <img src="assets/img/pagina-jogo/starfield-2.jpg" alt="">
-                    <img src="assets/img/pagina-jogo/starfield-3.png" alt="">
-                    <img src="assets/img/pagina-jogo/starfield-4.jpg" alt="">
-                    <img src="assets/img/pagina-jogo/starfield-5.png" alt="">
-                    <img src="assets/img/pagina-jogo/starfield-6.png" alt="">
+                <div id="medias" class="parent">
+                    <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+                    <div class="child-container">
+                        <div id="child">
+                            <img src="https://i.ytimg.com/vi_webp/Ek3I6_9c58E/maxresdefault.webp" alt="" class="voltar-video">
+                            <img src="assets/img/pagina-jogo/starfield-logo.jpeg" alt="" class="trocar-video">
+                            <img src="assets/img/pagina-jogo/starfield-1.png" alt="" class="trocar-video">
+                            <img src="assets/img/pagina-jogo/starfield-2.jpg" alt="" class="trocar-video">
+                            <img src="assets/img/pagina-jogo/starfield-3.png" alt="" class="trocar-video">
+                            <img src="assets/img/pagina-jogo/starfield-4.jpg" alt="" class="trocar-video">
+                            <img src="assets/img/pagina-jogo/starfield-5.png" alt="" class="trocar-video">
+                            <img src="assets/img/pagina-jogo/starfield-6.png" alt="" class="trocar-video">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <script>
+                        /* carrosel arrastavel */
+                        jQuery("#child").draggable({
+                            cursor: "move",
+                            containment: "parent",
+                        });
+                    </script>
+                    <script>
+                        /* Trocar as imagens e video */
+                        const imagensTrocarVideo = document.querySelectorAll(".trocar-video");
+                        const voltarVideo = document.querySelector(".voltar-video");
+                        const videoOriginalSrc = "https://www.youtube.com/embed/Ek3I6_9c58E?si=QH4OQ2EbD72XksgV";
+                        const divVideo = document.getElementById("div-video");
+                        function restaurarVideoOriginal() {
+                            const novoVideo = document.createElement("iframe");
+                            novoVideo.setAttribute("src", videoOriginalSrc);
+                            novoVideo.setAttribute("title", "YouTube video player");
+                            novoVideo.setAttribute("frameborder", "0");
+                            novoVideo.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+                            novoVideo.setAttribute("allowfullscreen", "");
+                            divVideo.innerHTML = "";
+                            divVideo.appendChild(novoVideo);
+                        }
+                        voltarVideo.addEventListener("click", restaurarVideoOriginal);
+                        imagensTrocarVideo.forEach((imagem) => {
+                            imagem.addEventListener("click", function () {
+                                const novoSrc = this.getAttribute("src");
+                                const novoVideo = document.createElement("iframe");
+                                novoVideo.setAttribute("src", novoSrc);
+                                novoVideo.setAttribute("title", "YouTube video player");
+                                novoVideo.setAttribute("frameborder", "0");
+                                novoVideo.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+                                novoVideo.setAttribute("allowfullscreen", "");
+                                divVideo.innerHTML = "";
+                                divVideo.appendChild(novoVideo);
+                            });
+                        });
+                    </script>
+
                 </div>
             </div>
             <div class="info-jogo teste2">
@@ -140,8 +186,7 @@
 
 
 
-
-    </div>  
+    </div>
 
     <div id="rodape">
         <ul>
@@ -152,7 +197,7 @@
         </ul>
         <p>© 2023 The Real Score Todos os direitos reservados.</p>
     </div>
-    
+
     <!-- Modal Login -->
     <div id="modal1" class="modal">
         <div class="modal-content center-align">
