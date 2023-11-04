@@ -23,7 +23,7 @@
 
 </head>
 
-<body>
+<body onload="restaurarVideoOriginal()">
     <div id="navegacao" class="nav-extended nav-wrapper">
         <a href="index.html"><img src="./assets/img/logo2.png" class="logo brand-logo"></a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-medium-and-down"><i class="material-icons ">menu</i></a>
@@ -111,63 +111,74 @@
             </div>
             <div class="display-jogo">
                 <div class="div-video" id="div-video">
-                    <iframe src="https://www.youtube.com/embed/Ek3I6_9c58E?si=QH4OQ2EbD72XksgV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <!-- VIDEO e IMGS por javascript -->
                 </div>
-                <div id="medias" class="parent">
-                    <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
-                    <div class="child-container">
-                        <div id="child">
-                            <img src="https://i.ytimg.com/vi_webp/Ek3I6_9c58E/maxresdefault.webp" alt="" class="voltar-video">
-                            <img src="assets/img/pagina-jogo/starfield-logo.jpeg" alt="" class="trocar-video">
-                            <img src="assets/img/pagina-jogo/starfield-1.png" alt="" class="trocar-video">
-                            <img src="assets/img/pagina-jogo/starfield-2.jpg" alt="" class="trocar-video">
-                            <img src="assets/img/pagina-jogo/starfield-3.png" alt="" class="trocar-video">
-                            <img src="assets/img/pagina-jogo/starfield-4.jpg" alt="" class="trocar-video">
-                            <img src="assets/img/pagina-jogo/starfield-5.png" alt="" class="trocar-video">
-                            <img src="assets/img/pagina-jogo/starfield-6.png" alt="" class="trocar-video">
-                        </div>
-                        <div class="clear"></div>
+                <div id="medias" class="carousel-jogo">
+                    <div class="carousel-inner-jogo">
+                        <img src="https://i.ytimg.com/vi_webp/Ek3I6_9c58E/maxresdefault.webp" alt="" class="voltar-video">
+                        <img src="assets/img/pagina-jogo/starfield-logo.jpeg" alt="" class="trocar-video">
+                        <img src="assets/img/pagina-jogo/starfield-1.png" alt="" class="trocar-video">
+                        <img src="assets/img/pagina-jogo/starfield-2.jpg" alt="" class="trocar-video">
+                        <img src="assets/img/pagina-jogo/starfield-3.png" alt="" class="trocar-video">
+                        <img src="assets/img/pagina-jogo/starfield-4.jpg" alt="" class="trocar-video">
+                        <img src="assets/img/pagina-jogo/starfield-5.png" alt="" class="trocar-video">
+                        <img src="assets/img/pagina-jogo/starfield-6.png" alt="" class="trocar-video">
                     </div>
-                    <script>
-                        /* carrosel arrastavel */
-                        jQuery("#child").draggable({
-                            cursor: "move",
-                            containment: "parent",
+                </div>
+                <script>
+                    const imagensTrocarVideo = document.querySelectorAll(".trocar-video");
+                    const voltarVideo = document.querySelector(".voltar-video");
+                    const divVideo = document.getElementById("div-video");
+
+                    /* Video do trailer sempre colocar os url aqui */
+                    let videoOriginalSrc = "https://www.youtube.com/embed/Ek3I6_9c58E?si=QH4OQ2EbD72XksgV";
+
+                    function restaurarVideoOriginal() {
+                        divVideo.innerHTML = `<iframe src="${videoOriginalSrc}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+                        divVideo.style.paddingTop = "56%";
+                    }
+
+                    voltarVideo.addEventListener("click", restaurarVideoOriginal);
+
+                    imagensTrocarVideo.forEach((imagem) => {
+                        imagem.addEventListener("click", function () {
+                            const novoSrc = this.getAttribute("src");
+                            divVideo.innerHTML = `<div style="height: 100%; margin-bottom: 0%;"><img src="${novoSrc}" style="width: 100%; height: 100%; object-fit: cover;"></div>`;
+                            divVideo.style.paddingTop = "0%";
                         });
-                    </script>
-                    <script>
-                        /* Trocar as imagens e video */
-                        const imagensTrocarVideo = document.querySelectorAll(".trocar-video");
-                        const voltarVideo = document.querySelector(".voltar-video");
-                        const videoOriginalSrc = "https://www.youtube.com/embed/Ek3I6_9c58E?si=QH4OQ2EbD72XksgV";
-                        const divVideo = document.getElementById("div-video");
-                        function restaurarVideoOriginal() {
-                            const novoVideo = document.createElement("iframe");
-                            novoVideo.setAttribute("src", videoOriginalSrc);
-                            novoVideo.setAttribute("title", "YouTube video player");
-                            novoVideo.setAttribute("frameborder", "0");
-                            novoVideo.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
-                            novoVideo.setAttribute("allowfullscreen", "");
-                            divVideo.innerHTML = "";
-                            divVideo.appendChild(novoVideo);
-                        }
-                        voltarVideo.addEventListener("click", restaurarVideoOriginal);
-                        imagensTrocarVideo.forEach((imagem) => {
-                            imagem.addEventListener("click", function () {
-                                const novoSrc = this.getAttribute("src");
-                                const novoVideo = document.createElement("iframe");
-                                novoVideo.setAttribute("src", novoSrc);
-                                novoVideo.setAttribute("title", "YouTube video player");
-                                novoVideo.setAttribute("frameborder", "0");
-                                novoVideo.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
-                                novoVideo.setAttribute("allowfullscreen", "");
-                                divVideo.innerHTML = "";
-                                divVideo.appendChild(novoVideo);
+                    });
+
+                </script>
+                <script>
+                    /* Carrosel draggable */
+                    $(document).ready(function () {
+                        const $carousel = $('.carousel-jogo');
+                        const $carouselInner = $carousel.find('.carousel-inner-jogo');
+                        const $images = $carouselInner.find('img');
+                        let currentIndex = 0;
+
+                        $images.on('dragstart', function (e) {
+                            e.preventDefault();
+                        });
+
+                        $carousel.on('mousedown touchstart', function (e) {
+                            const startX = e.type === 'mousedown' ? e.pageX : e.originalEvent.touches[0].pageX;
+                            const initialScrollLeft = $carousel.scrollLeft();
+
+                            $carousel.on('mousemove touchmove', function (e) {
+                                const currentX = e.type === 'mousemove' ? e.pageX : e.originalEvent.touches[0].pageX;
+                                const diffX = currentX - startX;
+                                $carousel.scrollLeft(initialScrollLeft - diffX);
+                            });
+
+                            $carousel.on('mouseup touchend', function () {
+                                $carousel.off('mousemove touchmove');
+                                $carousel.off('mouseup touchend');
                             });
                         });
-                    </script>
+                    });
+                </script>
 
-                </div>
             </div>
             <div class="info-jogo teste2">
                 <div class="img ">
@@ -176,16 +187,6 @@
                 <p class="nome">Starfield</p>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
     </div>
 
     <div id="rodape">

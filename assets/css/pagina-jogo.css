@@ -30,6 +30,9 @@
     width: 100%;
     flex-direction: column;
     min-width: 100px !important;
+    border: 10px solid #252525;
+    border-radius: 15px;
+    background-color:#252525;
 }
 
 .container1 {
@@ -44,7 +47,6 @@
 }
 
 .div-video {
-    border: 1px solid red;
     padding-top: 56%;
     position: relative;
 }
@@ -58,45 +60,32 @@
 }
 
 #medias {
+    margin-top: 10px;
     position: sticky !important;
-    align-items: first baseline;
     width: 100%;
     height: auto;
-    border: 1px solid red;
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 15px;
 }
 
 #medias img {
     width: 200px;
     height: auto;
     margin: 0 10px;
+    min-width: 100px;
 }
 
-
-.parent {
-    width: 100%;
+.carousel-jogo {
     overflow: hidden;
-    left: 20px;
-}
-
-.child-container {
-    width: 1910px /* Sempre aumentar as proporçoes iguais para width e left */;
-    left: -875px;
+    white-space: nowrap;
+    width: 100%;
     position: relative;
 }
 
-#child {
-    width: 1000px;
-    float: left;
-    font-size: 15px;
-    font-family: arial;
-    padding: 10px 5px 10px 0;
-    left: 890px /* usar o mesmo left do child-container so que positivo */;
+.carousel-inner-jogo {
     display: flex;
-    flex-direction: row;
-}
-
-.clear {
-    clear: both;
+    transition: transform 0.3s ease;
 }
 
 div::-webkit-scrollbar-track {
