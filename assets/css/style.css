@@ -99,9 +99,13 @@ a:hover{
 #navegacao .usuario img { /* Configuração da imagem que representa o usuário no navbar */
     height: 75%;
     margin-top: 7px;
-    width: 25%;
+    max-width: 23%;
     margin-right: 10px; /* Adicione um espaçamento à direita do ícone */
 }
+.sidenav img{
+    max-width: 50px !important;
+}
+
 
 /* Modal */
 
@@ -159,48 +163,52 @@ a:hover{
 }
 
 /* Dropdown */
-#dropdown-pc{ /* Corpo do Dropdown */
+
+#dropdown1{ /* Corpo do Dropdown */
     background-color: #252525;
     width:100% !important;
-    height: 430px !important;
+    height: 380px !important;
     left:-0% !important;
-    top: 100% !important;
-    overflow-y: hidden;
+    top: 100% !important;   
 }
 
-#dropdown-mobile{ /* Corpo do dropdown responsivo */
+#dropdown2{ 
+    top: 0px!important;
     background-color: #252525;
+    flex-direction: column !important;    
+}
+.sidenav li > a{
+    display: flex !important;
+    position:relative !important;
 }
 
-#dropdown-pc ul{ /* Alinhamento das li's do dropdown */
-    display: inline !important;
+.dropdown-content{
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-evenly !important;
 }
 
-#dropdown-pc ul{ /* Alinhamento do texto da dropdown */
-    text-align: center;
+.dropdown-content-sidnav{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-evenly !important;
+    display: none;
 }
 
-.dropdown-jogos, .dropdown-noticias, .dropdown-temas{
-    width:19%;
-    height:400px;
-    display: inline;
-    position: relative;
-    margin:0 50px;
+
+.dropdown-jogos li{
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start !important;
+    width: 300px !important;
+    z-index: -100;
 }
 
-.dropdown-temas{
-    position: relative;
-    top:-14.25%;
-}
-
-.dropdown-noticias{
-    position: relative;
-    top:-39%;
-}
 
 .dropdown-content li:hover{
     background-color:transparent !important;
 }
+
 
 /* Carrossel */
 .carousel {
