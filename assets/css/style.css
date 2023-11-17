@@ -162,7 +162,7 @@ a:hover{
 #dropdown-pc{ /* Corpo do Dropdown */
     background-color: #252525;
     width:100% !important;
-    height: 380px !important;
+    height: 430px !important;
     left:-0% !important;
     top: 100% !important;
     overflow-y: hidden;
@@ -170,11 +170,6 @@ a:hover{
 
 #dropdown-mobile{ /* Corpo do dropdown responsivo */
     background-color: #252525;
-    flex-direction: column !important;    
-}
-.sidenav li > a{
-    display: flex !important;
-    position:relative !important;
 }
 
 #dropdown-pc ul{ /* Alinhamento das li's do dropdown */
@@ -185,7 +180,7 @@ a:hover{
     text-align: center;
 }
 
-#dropdown-jogos, #dropdown-noticias, #dropdown-temas{
+.dropdown-jogos, .dropdown-noticias, .dropdown-temas{
     width:19%;
     height:400px;
     display: inline;
@@ -193,6 +188,15 @@ a:hover{
     margin:0 50px;
 }
 
+.dropdown-temas{
+    position: relative;
+    top:-14.25%;
+}
+
+.dropdown-noticias{
+    position: relative;
+    top:-39%;
+}
 
 .dropdown-content li:hover{
     background-color:transparent !important;
@@ -208,13 +212,30 @@ a:hover{
     max-width: 100% !important;
     height: auto !important;
 }
-@media (max-width: 600px) {
-   .carousel img{
-    scale: 0.6;
-   }
-   .carousel{
-    height: 300px !important;
-   }
+
+@media (max-width: 900px) {
+    .modal{ /* O corpo do modal */
+        width: 60% !important;
+        height: auto;
+        }
+    .boxes{ /* Inputs para inserção de login */
+        width:70% !important;
+    }
+
+    @media (max-width: 600px) {
+        .carousel img{
+            scale: 0.6;
+        }
+        .carousel{
+            height: 300px !important;
+        }
+        .modal{ /* O corpo do modal */
+            width: 90% !important;
+            }
+        .boxes{ /* Inputs para inserção de login */
+            width:90% !important;
+        }
+    }
 }
 
 .carousel .carousel-item{

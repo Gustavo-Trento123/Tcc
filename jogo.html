@@ -29,7 +29,7 @@
         <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-medium-and-down"><i class="material-icons ">menu</i></a>
         <ul id="nav-mobile" class="menu right hide-on-med-and-down">
             <li><a class='dropdown-trigger' href='#' data-target='dropdown-pc'>Jogos &nbsp<i class="arrow down"></i></a></li>
-            <li><a href="#">Críticos</a></li>
+            <li><a href="#" onclick="M.toast({html: 'Em desenvolvimento'})">Críticos</a></li>
             <li><a href="noticia.html">Notícias</a></li>
         </ul>
         <div class="usuario right hide-on-med-and-down">
@@ -40,19 +40,19 @@
             <ul>
                 <li><a class="sidenav-close" href="#!"><i class="material-icons" style="color:white; margin: 0 0 0 100%;">close</i></a></li>
                 <li><a class='dropdown-trigger' href='#' data-target='dropdown-mobile'>Jogos</a></li>
-                <li><a href="#">Críticos</a></li>
+                <li><a href="#" onclick="M.toast({html: 'Em desenvolvimento'})">Críticos</a></li>
                 <li><a href="noticia.html">Notícias</a></li>
             </ul>
         </div>
         <ul id='dropdown-pc' class='dropdown-content'>
-            <fieldset id="dropdown-jogos">
+            <fieldset class="dropdown-jogos">
                 <legend>Mundo dos Jogos</legend>
                 <li><a href="#emalta">Em Alta</a></li>
                 <li><a href="#!">Lançamentos</a></li>
                 <li><a href="#!">Top de Todos os Tempos</a></li>
                 <li><a href="#!">Em Alta</a></li>
             </fieldset>
-            <fieldset id="dropdown-temas">
+            <fieldset class="dropdown-temas">
                 <legend>Temas</legend>
                 <li><a>Ação</a></li>
                 <li><a>Aventura</a></li>
@@ -60,21 +60,21 @@
                 <li><a>Estratégia</a></li>
                 <li><a>RPG</a></li>
             </fieldset>
-            <fieldset id="dropdown-noticias">
+            <fieldset class="dropdown-noticias">
                 <legend>Fique por Dentro</legend>
                 <li><a>Novidades</a></li>
                 <li><a>The Game Awards</a></li>
             </fieldset>
         </ul>
         <ul id='dropdown-mobile' class='dropdown-content'>
-            <fieldset id="dropdown-jogos">
+            <fieldset class="dropdown-jogos">
                 <legend>Mundo dos Jogos</legend>
                 <li><a href="#!">Em Alta</a></li>
                 <li><a href="#!">Lançamentos</a></li>
                 <li><a href="#!">Top de Todos os Tempos</a></li>
                 <li><a href="#!">Em Alta</a></li>
             </fieldset>
-            <fieldset id="dropdown-temas">
+            <fieldset class="dropdown-temas">
                 <legend>Temas</legend>
                 <li><a>Ação</a></li>
                 <li><a>Aventura</a></li>
@@ -82,7 +82,7 @@
                 <li><a>Estratégia</a></li>
                 <li><a>RPG</a></li>
             </fieldset>
-            <fieldset id="dropdown-noticias">
+            <fieldset class="dropdown-noticias">
                 <legend>Fique por Dentro</legend>
                 <li><a>Novidades</a></li>
                 <li><a>The Game Awards</a></li>
@@ -99,7 +99,7 @@
 
     <div class="container1">
         <div class="info-jogo-mobile teste" style="display: none;">
-            <div class="img"">
+            <div class="img">
                 <img src=" assets/img/carrosel/carrosel3.jpg ">
             </div>
             <p class=" nome">Starfield</p>
@@ -183,6 +183,7 @@
             </div>
         </div>
     </div>
+    
 
     <div id="rodape">
         <ul>
