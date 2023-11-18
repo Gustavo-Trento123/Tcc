@@ -47,22 +47,22 @@
                         <fieldset class="dropdown-jogos">
                             <legend>Mundo dos Jogos</legend>
                             <li><a href="#emalta">Em Alta</a></li>
-                            <li><a href="#!">Lançamentos</a></li>
-                            <li><a href="#!">Top de Todos os Tempos</a></li>
-                            <li><a href="#!">Em Alta</a></li>
+                            <li><a href="#recomendados">Recomendados</a></li>
+                            <li><a href="#!" onclick="M.toast({html: 'Em desenvolvimento'})">Top de Todos os Tempos</a></li>
+                            <li><a href="#!" onclick="M.toast({html: 'Em desenvolvimento'})">Em Alta</a></li>
                         </fieldset>
                         <fieldset class="dropdown-jogos">
                             <legend>Temas</legend>
-                            <li><a>Ação</a></li>
-                            <li><a>Aventura</a></li>
-                            <li><a>Terror</a></li>
-                            <li><a>Estratégia</a></li>
-                            <li><a>RPG</a></li>
+                            <li><a href="#acao">Ação</a></li>
+                            <li><a href="#sobre">Sobrevivência</a></li>
+                            <li><a onclick="M.toast({html: 'Em desenvolvimento'})">Terror</a></li>
+                            <li><a onclick="M.toast({html: 'Em desenvolvimento'})">Estratégia</a></li>
+                            <li><a onclick="M.toast({html: 'Em desenvolvimento'})">RPG</a></li>
                         </fieldset>
                         <fieldset class="dropdown-jogos">
                             <legend>Fique por Dentro</legend>
-                            <li><a>Novidades</a></li>
-                            <li><a>The Game Awards</a></li>
+                            <li><a onclick="M.toast({html: 'Em desenvolvimento'})">Novidades</a></li>
+                            <li><a onclick="M.toast({html: 'Em desenvolvimento'})">The Game Awards</a></li>
                         </fieldset>
                     </ul>
                 </li>
@@ -79,14 +79,14 @@
             <fieldset class="dropdown-jogos">
                 <legend>Mundo dos Jogos</legend>
                 <li><a href="#emalta">Em Alta</a></li>
-                <li><a href="#!">Lançamentos</a></li>
+                <li><a href="#recomendados">Recomendados</a></li>
                 <li><a href="#!">Top de Todos os Tempos</a></li>
                 <li><a href="#!">Em Alta</a></li>
             </fieldset>
             <fieldset class="dropdown-jogos">
                 <legend>Temas</legend>
-                <li><a>Ação</a></li>
-                <li><a>Aventura</a></li>
+                <li><a href="#acao">Ação</a></li>
+                <li><a href="#sobre">Sobrevivência</a></li>
                 <li><a>Terror</a></li>
                 <li><a>Estratégia</a></li>
                 <li><a>RPG</a></li>
@@ -121,89 +121,93 @@
     <!-- Catálogo de Jogos -->
     <div id="catalogo" class="carrosel-filmes">
         <div>
+            <span class="anchor" id="emalta"></span>
             <h5>Em alta:</h5>
             <div class="owl-carousel owl-theme">
                 <div class="item">
-                    <img class="box-filme" src="./assets/img/Catalogo/cs2.jpg" alt="jogo cs2">
-                    <p class="nome-jogo">Counter-Strike 2</p>
+                    <a href="jogo.html"> <img class="box-filme" src="./assets/img/Catalogo/cs2.jpg" alt="jogo cs2">
+                    <p class="nome-jogo">Counter-Strike 2</p></a>
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="./assets/img/Catalogo/baldersgate.jpg" alt="jogo balder's gate">
-                    <p class="nome-jogo">Balder's Gate</p>
+                    <a href="jogo.html"> <img class="box-filme" src="./assets/img/Catalogo/baldersgate.jpg" alt="jogo balder's gate">
+                    <p class="nome-jogo">Balder's Gate</p></a>
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="./assets/img/Catalogo/orithewillofwisps.jpg" alt="jogo ori the will of wisps">
-                    <p class="nome-jogo">ORI and the will of wisps</p>
+                    <a href="jogo.html"> <img class="box-filme" src="./assets/img/Catalogo/orithewillofwisps.jpg" alt="jogo ori the will of wisps">
+                    <p class="nome-jogo">ORI and the will of wisps</p></a>
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="./assets/img/Catalogo/starfield.jpg" alt="jogo starfield">
-                    <p class="nome-jogo">Starfield</p>
+                    <a href="jogo.html"> <img class="box-filme" src="./assets/img/Catalogo/starfield.jpg" alt="jogo starfield">
+                    <p class="nome-jogo">Starfield</p></a>
                 </div>
             </div>
         </div>
     
         <div>
+            <span id="recomendados" class="anchor"></span>
             <h5>Recomendados:</h5>
             <div class="owl-carousel owl-theme">
                 <div class="item">
-                    <img class="box-filme" src="./assets/img/Catalogo/starfield.jpg" alt="jogo starfield">
-                    <p class="nome-jogo">Starfield</p>
+                    <a href="jogo.html"> <img class="box-filme" src="./assets/img/Catalogo/starfield.jpg" alt="jogo starfield">
+                    <p class="nome-jogo">Starfield</p></a>
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="./assets/img/Catalogo/cs2.jpg" alt="jogo cs2">
-                    <p class="nome-jogo">Counter-Strike 2</p>
+                    <a href="jogo.html"> <img class="box-filme" src="./assets/img/Catalogo/cs2.jpg" alt="jogo cs2">
+                    <p class="nome-jogo">Counter-Strike 2</p></a>
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="./assets/img/Catalogo/baldersgate.jpg" alt="jogo balder's gate">
-                    <p class="nome-jogo">Balder's Gate</p>
+                    <a href="jogo.html"> <img class="box-filme" src="./assets/img/Catalogo/baldersgate.jpg" alt="jogo balder's gate">
+                    <p class="nome-jogo">Balder's Gate</p></a>
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="./assets/img/Catalogo/orithewillofwisps.jpg" alt="jogo ori the will of wisps">
-                    <p class="nome-jogo">ORI and the will of wisps</p>
+                    <a href="jogo.html"> <img class="box-filme" src="./assets/img/Catalogo/orithewillofwisps.jpg" alt="jogo ori the will of wisps">
+                    <p class="nome-jogo">ORI and the will of wisps</p></a>
                 </div>
             </div>
         </div>
 
         <div>
+            <span id="acao" class="anchor"></span>
             <h5>Ação:</h5>
             <div class="owl-carousel owl-theme">
                 <div class="item">
-                    <img class="box-filme" src="./assets/img/Catalogo/orithewillofwisps.jpg" alt="jogo ori the will of wisps">
-                    <p class="nome-jogo">ORI and the will of wisps</p>
+                    <a href="jogo.html"> <img class="box-filme" src="./assets/img/Catalogo/orithewillofwisps.jpg" alt="jogo ori the will of wisps">
+                    <p class="nome-jogo">ORI and the will of wisps</p></a>
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="./assets/img/Catalogo/starfield.jpg" alt="jogo starfield">
-                    <p class="nome-jogo">Starfield</p>
+                    <a href="jogo.html"> <img class="box-filme" src="./assets/img/Catalogo/starfield.jpg" alt="jogo starfield">
+                    <p class="nome-jogo">Starfield</p></a>
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="./assets/img/Catalogo/cs2.jpg" alt="jogo cs2">
-                    <p class="nome-jogo">Counter-Strike 2</p>
+                    <a href="jogo.html"> <img class="box-filme" src="./assets/img/Catalogo/cs2.jpg" alt="jogo cs2">
+                    <p class="nome-jogo">Counter-Strike 2</p></a>
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="./assets/img/Catalogo/baldersgate.jpg" alt="jogo balder's gate">
-                    <p class="nome-jogo">Balder's Gate</p>
+                    <a href="jogo.html"> <img class="box-filme" src="./assets/img/Catalogo/baldersgate.jpg" alt="jogo balder's gate">
+                    <p class="nome-jogo">Balder's Gate</p></a>
                 </div>
             </div>
         </div>
 
         <div>
+            <span id="sobre" class="anchor"></span>
             <h5>Sobrevivência:</h5>
             <div class="owl-carousel owl-theme">
                 <div class="item">
-                    <img class="box-filme" src="./assets/img/Catalogo/baldersgate.jpg" alt="jogo balder's gate">
-                    <p class="nome-jogo">Balder's Gate</p>
+                    <a href="jogo.html"> <img class="box-filme" src="./assets/img/Catalogo/baldersgate.jpg" alt="jogo balder's gate">
+                    <p class="nome-jogo">Balder's Gate</p></a>
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="./assets/img/Catalogo/orithewillofwisps.jpg" alt="jogo ori the will of wisps">
-                    <p class="nome-jogo">ORI and the will of wisps</p>
+                    <a href="jogo.html"> <img class="box-filme" src="./assets/img/Catalogo/orithewillofwisps.jpg" alt="jogo ori the will of wisps">
+                    <p class="nome-jogo">ORI and the will of wisps</p></a>
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="./assets/img/Catalogo/starfield.jpg" alt="jogo starfield">
-                    <p class="nome-jogo">Starfield</p>
+                    <a href="jogo.html"> <img class="box-filme" src="./assets/img/Catalogo/starfield.jpg" alt="jogo starfield">
+                    <p class="nome-jogo">Starfield</p></a>
                 </div>
                 <div class="item">
-                    <img class="box-filme" src="./assets/img/Catalogo/cs2.jpg" alt="jogo cs2">
-                    <p class="nome-jogo">Counter-Strike 2</p>
+                    <a href="jogo.html"> <img class="box-filme" src="./assets/img/Catalogo/cs2.jpg" alt="jogo cs2">
+                    <p class="nome-jogo">Counter-Strike 2</p></a>
                 </div>
             </div>
         </div>
@@ -214,10 +218,10 @@
 
     <div id="rodape">
         <ul>
-            <li>Trabalhe conosco</li>
-            <li>Termos de uso</li>
-            <li>Contato</li>
-            <li>Sobre nós</li>
+            <li onclick="M.toast({html: 'Em desenvolvimento'})">Trabalhe conosco</li>
+            <li onclick="M.toast({html: 'Em desenvolvimento'})">Termos de uso</li>
+            <li onclick="M.toast({html: 'Em desenvolvimento'})">Sobre nós</li>
+            <li onclick="M.toast({html: 'Em desenvolvimento'})">Contato</li>
         </ul>
         <p>© 2023 The Real Score Todos os direitos reservados.</p>
     </div>

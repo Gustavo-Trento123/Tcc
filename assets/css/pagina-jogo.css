@@ -137,6 +137,11 @@ div::-webkit-scrollbar-thumb {
     font-size: larger;
 }
 
+.nota-jogo{
+    text-align: justify;
+    margin: 0 10px;
+}
+
 
 @media (max-width: 922px) {
     #id-bar li {
