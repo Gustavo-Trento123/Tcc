@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Link do calculo de média -->
+    <?php include 'assets/php/calculo_media_usuarios.php';?>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -148,6 +151,7 @@
     </div>
 
     <!-- Trailer do jogo -->
+<<<<<<< Updated upstream:jogo.html
     <div id="conteudo-pagina-jogo">
         <div id="info-jogo2" style="display: none;">
             <img src="assets/img/carrosel/carrosel3.jpg " id="imagem-jogo" class="responsive-img">
@@ -155,6 +159,46 @@
         </div>
         <div id="trailer">
             <iframe width="55.8%"  height="25%" src="https://www.youtube.com/embed/Ek3I6_9c58E?si=QH4OQ2EbD72XksgV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><!--680px por 383px-->
+=======
+    <div class="container1">
+        <div class="info-jogo-mobile teste" style="display: none;">
+            <div class="img"">
+                <img src=" assets/img/carrosel/carrosel3.jpg ">
+            </div>
+            <p class=" nome">Starfield</p>
+            </div>
+            <div class="display-jogo">
+                <div class="div-video">
+                    <iframe src="https://www.youtube.com/embed/Ek3I6_9c58E?si=QH4OQ2EbD72XksgV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                    encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                </div>
+                <div id="medias">
+                    <img src="assets/img/pagina-jogo/starfield-logo.jpeg" alt="">
+                    <img src="assets/img/pagina-jogo/starfield-1.png" alt="">
+                    <img src="assets/img/pagina-jogo/starfield-2.jpg" alt="">
+                    <img src="assets/img/pagina-jogo/starfield-3.png" alt="">
+                    <img src="assets/img/pagina-jogo/starfield-4.jpg" alt="">
+                    <img src="assets/img/pagina-jogo/starfield-5.png" alt="">
+                    <img src="assets/img/pagina-jogo/starfield-6.png" alt="">
+                </div>
+            </div>
+
+            
+            <div class="info-jogo teste2">
+                <div class="img ">
+                    <img src="assets/img/carrosel/carrosel3.jpg ">
+                </div>
+                <h5 class="nome">Starfield</h5>
+
+                <div class="nota"><?echo  round($media,2)?></div>
+
+                <p class="legenda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, voluptatum animi. Vel dolor eligendi quasi alias libero architecto quibusdam corrupti asperiores incidunt reprehenderit?
+                Cupiditate voluptates odio laboriosam ab voluptate cum, sequi repellendus rerum possimus. Voluptates corrupti necessitatibus, in laudantium incidunt non dolore beatae quasi repellat rerum.
+                Dolores optio praesentium corporis officia illo quod suscipit quaerat voluptatem at quam rem veritatis ex dolore consectetur alias, consequatur asperiores vero provident! Soluta?</p>
+
+            </div>
+>>>>>>> Stashed changes:jogo.php
         </div>
 
         <div id="info-jogo">
