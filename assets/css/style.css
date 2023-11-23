@@ -112,9 +112,10 @@ a:hover{
 .modal{ /* O corpo do modal */
     color:#fff;
     background-color: #000 !important;
-    height: 100%  !important;
-    width: 40% !important;
+    height: auto !important;
+    width: 30% !important;
     padding: 0px !important;
+    overflow-y: hidden !important;
 }
 
 .logo-modal{ /* A logo presente quando se abre o modal */
@@ -225,7 +226,10 @@ a:hover{
     .modal{ /* O corpo do modal */
         width: 60% !important;
         height: auto;
-        }
+    }
+    #logins img{ /* Imagens do modal representando as formas de login */
+        width:80%;
+    }
     .boxes{ /* Inputs para inserção de login */
         width:70% !important;
     }
@@ -239,7 +243,10 @@ a:hover{
         }
         .modal{ /* O corpo do modal */
             width: 90% !important;
-            }
+        }
+        #logins img{ /* Imagens do modal representando as formas de login */
+            width:80%;
+        }
         .boxes{ /* Inputs para inserção de login */
             width:90% !important;
         }
