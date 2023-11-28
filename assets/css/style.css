@@ -86,7 +86,7 @@ a:hover{
     color: #fff !important;
 }
 
-#navegacao .usuario { /* Configuração do alinhamento do icone de usuário e texto */
+#navegacao .usuarionav { /* Configuração do alinhamento do icone de usuário e texto */
     display: flex; /* Adicione flex para alinhar o ícone e o texto verticalmente */
     align-items: center;
 }
@@ -96,7 +96,7 @@ a:hover{
     color:black !important;
 }
 
-#navegacao .usuario img { /* Configuração da imagem que representa o usuário no navbar */
+#navegacao .usuarionav img { /* Configuração da imagem que representa o usuário no navbar */
     height: 75%;
     margin-top: 7px;
     max-width: 23%;

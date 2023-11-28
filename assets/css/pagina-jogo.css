@@ -1,9 +1,10 @@
+
 /* Nav bar secundaria */
 #id-bar {
     /* Corpo da barra de navegaÃ§Ã£o secundaria */
     background-color: #252525;
     margin: 0 auto;
-    width: 89% /* 1212px */;
+    width: 89%; /* 1212px */
     height: 47px;
     position: relative;
     top: 103px;
@@ -66,13 +67,13 @@
     height: auto;
     background-color: rgb(0, 0, 0);
     border: 1px solid black;
-    overflow-x: scroll;
 }
 
 #medias img {
     width: 200px;
     height: auto;
     margin: 0 10px;
+    
 }
 
 .carousel-jogo {
@@ -85,6 +86,7 @@
 .carousel-inner-jogo {
     display: flex;
     transition: transform 0.3s ease;
+    overflow-x: scroll;
 }
 
 div::-webkit-scrollbar-track {
@@ -111,11 +113,11 @@ div::-webkit-scrollbar-thumb {
 }
 
 .img img {
-    width: 100%;
+    width: calc(100% - 10px);
     height: auto;
     object-fit: scale-down;
-    padding-left: 10px;
-
+    margin-left: 10px;
+    border-radius: 15px;
 }
 
 .info-jogo {
@@ -133,7 +135,7 @@ div::-webkit-scrollbar-thumb {
 .nome {
     display: flex;
     justify-content: center;
-    font-size: larger;
+    font-size:x-large;
 }
 
 .nota-jogo{
@@ -211,3 +213,82 @@ div::-webkit-scrollbar-thumb {
         margin: 0 10px;
     }
 }
+
+.notas{
+    display: flex;
+    justify-content: space-around
+}
+
+.nota{
+    height: 60px;
+    width: 60px;
+    color: #252525;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 20pt;
+    font-weight: bold;
+    line-height:60px;
+}
+
+.numero{
+    display: flex;
+    justify-content: center;
+}
+
+.borda-notas{
+    
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.notas-nome{
+    background-color: #252525;
+    border-radius: 15px;
+   margin-left: 10px;
+    padding: 15px 0px;
+    
+}
+
+
+
+
+
+
+
+.estrelas input[type=radio]{
+	display: none;
+}.estrelas label i.fa:before{
+	content: '\f005';
+	color: #FC0;
+}.estrelas input[type=radio]:checked ~ label i.fa:before{
+	color: #CCC;
+}
+
+
+.estrelas i{
+    width: 30px;
+    height: 30px;
+    font-size: 240%;
+}
+
+.estrelas{
+    margin: 0 auto;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+

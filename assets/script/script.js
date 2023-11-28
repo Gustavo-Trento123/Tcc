@@ -17,21 +17,25 @@ $(document).ready(function () {
 
     // Corrigir problema ao segurar o carrossel pc e celular
     carousel.on('mousedown touchstart', function () {
-        clearInterval(autoplayInterval);
+        clearInterval(autoplayInterval); 
     });
 
     carousel.on('mouseupm touchend', function () {
         autoplayInterval = setInterval(autoplay, intervalo);
-    });   
+    });
 });
 
 
 /* Funções Materialize */
-$(document).ready(function(){
+$(document).ready(function () {
     /* Sidenav barra lateral mobile responsividade  */
     $('.sidenav').sidenav();
     /* Modal Login */
     $('.modal').modal();
     /* Dropdown aba jogos */
     $('.dropdown-trigger').dropdown();
+
 });
+
+//:document.getElementById('dropdown1').style.display = 'none';
+  
