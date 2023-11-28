@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/pagina-jogo.css">
+    <!-- jquery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Materialize css e scripts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- icones Materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- scripts gerais e funções materialize -->
+    <script src="assets/script/script.js"></script>
+    <title>The Real Score - Starfield</title>
+
+</head>
+
+<body onload="restaurarVideoOriginal()">
+    <div id="navegacao" class="nav-extended nav-wrapper">
+        <a href="index.html"><img src="./assets/img/logo2.png" class="logo brand-logo"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-medium-and-down"><i class="material-icons ">menu</i></a>
+        <ul id="nav-mobile" class="menu right hide-on-med-and-down">
+            <li><a class='dropdown-trigger' href='#' data-target='dropdown1'>Jogos &nbsp<i class="arrow down"></i></a></li>
+            <li><a href="#" onclick="M.toast({html: 'Em desenvolvimento'})">Críticos</a></li>
+            <li><a href="noticia.html">Notícias</a></li>
+        </ul>
+        <div class="usuario right hide-on-med-and-down">
+            <img src="assets/img/usuario.png">
+            <p><a class="waves-effect waves-light btn modal-trigger" href="#modal1">CONTA</a></p>
+        </div>
+        <div class="sidenav" id="mobile-demo">
+            <ul>
+                <li><a class="sidenav-close" href="#!"><i class="material-icons" style="color:white; margin: 0 0 0 100%;">close</i></a></li>
+                <li>
+                    <a class='dropdown-trigger' href='#' data-target='dropdown2'>Jogos</a>
+                    <ul id='dropdown2' class='dropdown-content-sidnav' style="position: relative;">
+                        <fieldset class="dropdown-jogos">
+                            <legend>Mundo dos Jogos</legend>
+                            <li><a href="index.html#emalta">Em Alta</a></li>
+                            <li><a href="index.html#recomendados">Recomendados</a></li>
+                            <li><a href="#!" onclick="M.toast({html: 'Em desenvolvimento'})">Top de Todos os Tempos</a></li>
+                            <li><a href="#!" onclick="M.toast({html: 'Em desenvolvimento'})">Em Alta</a></li>
+                        </fieldset>
+                        <fieldset class="dropdown-jogos">
+                            <legend>Temas</legend>
+                            <li><a href="index.html#acao">Ação</a></li>
+                            <li><a href="index.html#sobre">Sobrevivência</a></li>
+                            <li><a onclick="M.toast({html: 'Em desenvolvimento'})">Terror</a></li>
+                            <li><a onclick="M.toast({html: 'Em desenvolvimento'})">Estratégia</a></li>
+                            <li><a onclick="M.toast({html: 'Em desenvolvimento'})">RPG</a></li>
+                        </fieldset>
+                        <fieldset class="dropdown-jogos">
+                            <legend>Fique por Dentro</legend>
+                            <li><a onclick="M.toast({html: 'Em desenvolvimento'})">Novidades</a></li>
+                            <li><a onclick="M.toast({html: 'Em desenvolvimento'})">The Game Awards</a></li>
+                        </fieldset>
+                    </ul>
+                </li>
+                <li><a href="#" onclick="M.toast({html: 'Em desenvolvimento'})">Críticos</a></li>
+                <li><a href="noticia.html">Notícias</a></li>
+                <br><br>
+                <div class="usuario">
+                    <img src="assets/img/usuario.png">
+                    <p><a class="waves-effect waves-light btn modal-trigger" href="#modal1">CONTA</a></p>
+                </div>
+            </ul>
+        </div>
+        <ul id='dropdown1' class='dropdown-content' style='display: none !important;'>
+            <fieldset class="dropdown-jogos">
+                <legend>Mundo dos Jogos</legend>
+                <li><a href="index.html#emalta">Em Alta</a></li>
+                <li><a href="index.html#recomendados">Recomendados</a></li>
+                <li><a href="#!" onclick="M.toast({html: 'Em desenvolvimento'})">Top de Todos os Tempos</a></li>
+                <li><a href="#!" onclick="M.toast({html: 'Em desenvolvimento'})">Em Alta</a></li>
+            </fieldset>
+            <fieldset class="dropdown-jogos">
+                <legend>Temas</legend>
+                <li><a href="index.html#acao">Ação</a></li>
+                <li><a href="index.html#sobre">Sobrevivência</a></li>
+                <li><a onclick="M.toast({html: 'Em desenvolvimento'})">Terror</a></li>
+                <li><a onclick="M.toast({html: 'Em desenvolvimento'})">Estratégia</a></li>
+                <li><a onclick="M.toast({html: 'Em desenvolvimento'})">RPG</a></li>
+            </fieldset>
+            <fieldset class="dropdown-jogos">
+                <legend>Fique por Dentro</legend>
+                <li><a onclick="M.toast({html: 'Em desenvolvimento'})">Novidades</a></li>
+                <li><a onclick="M.toast({html: 'Em desenvolvimento'})">The Game Awards</a></li>
+            </fieldset>
+        </ul>
+    </div>
+
+    <!-- barra de navegação jogos -->
+    <div id="id-bar">
+        <li><a href=""></a>JOGO</li>
+        <li><a href=""></a>COMPARADOR DE PREÇOS</li>
+        <li><a href=""></a>AVALIAÇÕES</li>
+    </div>
+
+    <div class="container1">
+        <div class="info-jogo-mobile teste" style="display: none;">
+            <div class="img">
+                <img src=" assets/img/carrosel/carrosel3.jpg ">
+            </div>
+            <p class=" nome">Starfield</p>
+            <p class="nota-jogo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, soluta numquam asperiores adipisci sapiente sunt explicabo aliquam inventore consectetur nulla deserunt illo enim quibusdam provident vero unde sequi reiciendis ex.</p>
+            </div>
+            <div class="display-jogo">
+            <?php 
+                include 'assets/php/calculo_media_usuarios.php';
+
+                echo $media;
+                ?>
+                <div class="div-video" id="div-video">
+                    <!-- VIDEO e IMGS por javascript -->
+                </div>
+                <div id="medias" class="carousel-jogo">
+                    <div class="carousel-inner-jogo">
+                        <img src="https://i.ytimg.com/vi_webp/Ek3I6_9c58E/maxresdefault.webp" alt="" class="voltar-video">
+                        <img src="assets/img/pagina-jogo/starfield-logo.jpeg" alt="" class="trocar-video">
+                        <img src="assets/img/pagina-jogo/starfield-1.png" alt="" class="trocar-video">
+                        <img src="assets/img/pagina-jogo/starfield-2.jpg" alt="" class="trocar-video">
+                        <img src="assets/img/pagina-jogo/starfield-3.png" alt="" class="trocar-video">
+                        <img src="assets/img/pagina-jogo/starfield-4.jpg" alt="" class="trocar-video">
+                        <img src="assets/img/pagina-jogo/starfield-5.png" alt="" class="trocar-video">
+                        <img src="assets/img/pagina-jogo/starfield-6.png" alt="" class="trocar-video">
+                    </div>
+                </div>
+                <script>
+                    const imagensTrocarVideo = document.querySelectorAll(".trocar-video");
+                    const voltarVideo = document.querySelector(".voltar-video");
+                    const divVideo = document.getElementById("div-video");
+
+                    /* Video do trailer sempre colocar os url aqui */
+                    let videoOriginalSrc = "https://www.youtube.com/embed/Ek3I6_9c58E?si=QH4OQ2EbD72XksgV";
+
+                    function restaurarVideoOriginal() {
+                        divVideo.innerHTML = `<iframe src="${videoOriginalSrc}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+                        divVideo.style.paddingTop = "56%";
+                    }
+
+                    voltarVideo.addEventListener("click", restaurarVideoOriginal);
+
+                    imagensTrocarVideo.forEach((imagem) => {
+                        imagem.addEventListener("click", function () {
+                            const novoSrc = this.getAttribute("src");
+                            divVideo.innerHTML = `<div style="height: 100%; margin-bottom: 0%;"><img src="${novoSrc}" style="width: 100%; height: 100%; object-fit: cover;"></div>`;
+                            divVideo.style.paddingTop = "0%";
+                        });
+                    });
+
+                </script>
+                <script>
+                    /* Carrosel draggable */
+                    $(document).ready(function () {
+                        const $carousel = $('.carousel-jogo');
+                        const $carouselInner = $carousel.find('.carousel-inner-jogo');
+                        const $images = $carouselInner.find('img');
+                        let currentIndex = 0;
+
+                        $images.on('dragstart', function (e) {
+                            e.preventDefault();
+                        });
+
+                        $carousel.on('mousedown touchstart', function (e) {
+                            const startX = e.type === 'mousedown' ? e.pageX : e.originalEvent.touches[0].pageX;
+                            const initialScrollLeft = $carousel.scrollLeft();
+
+                            $carousel.on('mousemove touchmove', function (e) {
+                                const currentX = e.type === 'mousemove' ? e.pageX : e.originalEvent.touches[0].pageX;
+                                const diffX = currentX - startX;
+                                $carousel.scrollLeft(initialScrollLeft - diffX);
+                            });
+
+                            $carousel.on('mouseup touchend', function () {
+                                $carousel.off('mousemove touchmove');
+                                $carousel.off('mouseup touchend');
+                            });
+                        });
+                    });
+                </script>
+                <br>
+            <p class="nota-jogo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum cum assumenda est nemo eaque ad quas officia. Explicabo quas reprehenderit, earum quidem, et, repellat voluptate ab voluptates ea quis natus quisquam eveniet quae velit! Cum sequi ipsa saepe quo, sit aspernatur, veritatis sunt assumenda incidunt voluptate numquam voluptatem nisi! Sit officia, voluptatum, porro a nam corporis deleniti deserunt provident nostrum explicabo labore vel assumenda eveniet at exercitationem neque eaque. Maxime nobis, perspiciatis debitis laboriosam eos rerum soluta obcaecati in aspernatur corporis recusandae sunt illo sint asperiores neque iusto fugit quam eligendi blanditiis temporibus. Esse inventore, consectetur eius ad doloremque laborum.</p>
+            </div>
+            <div class="info-jogo teste2">
+                <div class="img ">
+                    <img src="assets/img/carrosel/carrosel3.jpg ">
+                </div>
+                <p class="nome">Starfield</p>
+                <br>
+                <p class="nota-jogo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, soluta numquam asperiores adipisci sapiente sunt explicabo aliquam inventore consectetur nulla deserunt illo enim quibusdam provident vero unde sequi reiciendis ex.</p>
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="rodape">
+        <ul>
+            <li onclick="M.toast({html: 'Em desenvolvimento'})">Trabalhe conosco</li>
+            <li onclick="M.toast({html: 'Em desenvolvimento'})">Termos de uso</li>
+            <li onclick="M.toast({html: 'Em desenvolvimento'})">Sobre nós</li>
+            <li onclick="M.toast({html: 'Em desenvolvimento'})">Contato</li>
+        </ul>
+        <p>© 2023 The Real Score Todos os direitos reservados.</p>
+    </div>
+
+    <!-- Modal Login -->
+    <div id="modal1" class="modal">
+        <div class="modal-content center-align">
+            <div id="titulo">
+                <img class="logo-modal" src="assets/img/logo.png">
+                <h4>The Real Score</h4>
+               
+            </div>
+            <div id="logins">
+                <img src="assets/img/logins.png">
+                <br>OU<br>
+                <input class="boxes" type="text" placeholder="E-MAIL OU TELEFONE" name="usuario">
+                <input class="boxes" type="password" placeholder="SENHA" name="senha"><br>
+                <input class="submit" type="submit" Value="ENVIAR">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
