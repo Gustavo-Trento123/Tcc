@@ -43,7 +43,6 @@
                     <?php
                         while ($linha = mysqli_fetch_array($notaBanco)) {
                             $notaAtual = $linha['nota'];
-                            $notaAtual = "";
                         };
                     ?>
 
